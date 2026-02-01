@@ -13,6 +13,7 @@ const formattedDate = date
 <Base title={title} description={title} lang={lang} alternateUrl={alternateUrl}>
   <main class="post">
     <header class="post__header">
+      <a class="post__back" href={lang === 'en' ? '/en/' : '/'}>← {lang === 'en' ? 'Home' : 'Inicio'}</a>
       <p class="post__meta">{formattedDate}</p>
       <h1>{title}</h1>
     </header>
@@ -37,6 +38,17 @@ const formattedDate = date
     .post__header h1 {
       margin: 0 0 1.5rem;
       font-size: clamp(2rem, 3vw, 3rem);
+    }
+    .post__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
     }
     .post__content :global(p) {
       line-height: 1.75;
