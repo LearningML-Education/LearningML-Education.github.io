@@ -244,7 +244,7 @@ Cualquier algoritmo de ML, como acabamos de ver, requiere como entrada un conjun
 
 ![](images/imagen-10-1024x452.png)
 
-![](images/H0ypmnlc8TZDAAAAAElFTkSuQmCC)
+![](images/H0ypmnlc8TZDAAAAAElFTkSuQmCC.png)
 
 ![](images/imagen-11.png)
 

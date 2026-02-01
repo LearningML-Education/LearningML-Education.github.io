@@ -12,6 +12,7 @@
     "apply:translations": "bun scripts/apply-post-translations.mjs"
   },
   "dependencies": {
-    "astro": "^4.16.0"
+    "astro": "^4.16.0",
+    "marker": "^0.1.2"
   }
 }
