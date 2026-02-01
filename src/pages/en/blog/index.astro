@@ -55,6 +55,7 @@ const cards = await Promise.all(
   alternateUrl="/blog/"
 >
   <main class="list">
+    <a class="list__back" href="/en/">← Home</a>
     <h1>Blog</h1>
     {allCategories.length ? (
       <div class="filters">
@@ -150,6 +151,16 @@ const cards = await Promise.all(
       max-width: 1100px;
       margin: 0 auto;
       padding: 3rem 1.5rem 5rem;
+    }
+    .list__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
     }
     .filters {
       margin: 1.5rem 0 0;
