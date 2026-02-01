@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "develop"
   - "information"
+translation: reconocimiento-de-sonidos-en-learningml-v2
 ---
 
 **The rewrite of LearningML,** which resulted in **version 2**, was done with **the aim of improving the structure of the code** to achieve greater modularity **to facilitate the incorporation of new features.** So, once the rewrite was finished, it was time to work on new LearningML components, and the first one was **sound recognition.** The idea is to do something similar to [Teachable Machine's](http://teachablemachine.withgoogle.com) sound recognition.

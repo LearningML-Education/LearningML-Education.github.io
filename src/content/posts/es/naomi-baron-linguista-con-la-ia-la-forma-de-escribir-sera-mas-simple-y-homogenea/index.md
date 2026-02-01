@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: naomi-baron-linguist-ai-will-make-writing-simpler-and-more-homogeneous
 ---
 
 [![](images/11.Articulo-periodico-1024x478.png)](https://elpais.com/proyecto-tendencias/2024-11-29/naomi-baron-linguista-con-la-ia-la-forma-de-escribir-sera-mas-simple-y-homogenea.html)

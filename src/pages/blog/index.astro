@@ -8,7 +8,12 @@ const spanishPosts = posts
   .filter(post => post.slug.startsWith('es/'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
-<Base title="Blog LearningML" description="Artículos de LearningML en español">
+<Base
+  title="Blog LearningML"
+  description="Artículos de LearningML en español"
+  lang="es"
+  alternateUrl="/en/blog/"
+>
   <main class="list">
     <h1>Blog</h1>
     <ul>

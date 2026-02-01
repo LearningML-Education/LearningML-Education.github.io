@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: la-interfaz-grafica-de-learningml-editor
 ---
 
 **The development of any type of software application is greatly facilitated if a suitable framework is used.** Although it is true that the learning curve for these frameworks is usually quite steep, **their advantages make it worthwhile to study them.**

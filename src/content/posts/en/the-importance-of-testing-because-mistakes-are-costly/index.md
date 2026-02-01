@@ -5,6 +5,7 @@ categories:
   - "blog-en"
   - "develop"
   - "information"
+translation: la-importancia-de-probar-porque-los-errores-cuestan
 ---
 
 **When developing a software application,** whether it’s a game, a productivity tool, or an e-commerce platform, **it is essential to ensure that it works correctly.**

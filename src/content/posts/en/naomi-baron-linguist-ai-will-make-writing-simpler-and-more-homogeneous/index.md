@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "information"
+translation: naomi-baron-linguista-con-la-ia-la-forma-de-escribir-sera-mas-simple-y-homogenea
 ---
 
 [![](images/11.Articulo-periodico-1-1024x478.png)](https://elpais.com/proyecto-tendencias/2024-11-29/naomi-baron-linguista-con-la-ia-la-forma-de-escribir-sera-mas-simple-y-homogenea.html)

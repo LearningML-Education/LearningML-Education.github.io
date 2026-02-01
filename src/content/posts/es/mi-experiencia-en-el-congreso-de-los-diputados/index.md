@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "eventos"
   - "informacion-es"
+translation: my-experience-in-the-congress-of-deputies
 ---
 
 El día 11 de noviembre en la **"Sala Constitucional" del Congreso de los Diputados se presentaron los 4 [informes](https://www.oficinac.es/es/informes-c/inteligencia-artificial-y-educacion) que la Oficina de Ciencia y Tecnología del Congreso de los Diputados (Oficina C),** ha elaborado durante este año sobre 4 temas científicos de interés para la política actual:

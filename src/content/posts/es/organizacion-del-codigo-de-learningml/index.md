@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: how-learningml-code-is-organized
 ---
 
 Con esta entrada inicio una serie dedicada al **desarrollo de LearningML.** La intención es revelar, y a la vez documentar, cómo se ha construido la herramienta. Comienzo describiendo la organización del código a nivel de repositorios.

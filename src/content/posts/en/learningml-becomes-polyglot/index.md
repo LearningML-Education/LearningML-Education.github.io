@@ -7,6 +7,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: learningml-se-hace-poliglota
 ---
 
 _Translated with www.DeepL.com/Translator (free version)_

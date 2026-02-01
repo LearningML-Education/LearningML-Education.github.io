@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: programming-with-scratch
 ---
 
 En este videotutorial te mostramos cómo dar tus primeros pasos en la programación de forma visual, sencilla y ¡súper divertida!

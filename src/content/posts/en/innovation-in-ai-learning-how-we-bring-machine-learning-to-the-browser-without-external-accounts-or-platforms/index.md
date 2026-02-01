@@ -5,6 +5,7 @@ categories:
   - "blog-en"
   - "develop"
   - "information"
+translation: innovacion-en-la-ensenanza-de-ia-como-llevamos-el-machine-learning-al-navegador-sin-cuentas-ni-plataformas-externas
 ---
 
 In the development of **LearningML,** one of the key challenges was to create an **educational tool for teaching Artificial Intelligence (AI) that did not rely on user accounts or external platforms.** This was achieved by implementing the Machine Learning algorithms directly in the user's browser, using the open source Tensorflow.js library for the ML algorithms and mobilenet to encode images using the technique known as transfer learning.

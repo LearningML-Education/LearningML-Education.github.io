@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: programamos-con-scratch
 ---
 
 In this video tutorial we show you how to take your first steps in programming in a visual, simple and super fun way!

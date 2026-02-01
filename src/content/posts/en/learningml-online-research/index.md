@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: investigacion-sobre-learningml
 ---
 
 _Translated with www.DeepL.com/Translator (free version)_

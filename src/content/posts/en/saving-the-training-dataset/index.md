@@ -7,6 +7,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: guardamos-el-conjunto-de-datos-de-entrenamiento
 ---
 
 🌟 In this video we will learn how to save the training dataset. Loading the data is a time-consuming activity and if we need to use it for future classes, what better than being able to store it in a file for when we need it again? 🚀

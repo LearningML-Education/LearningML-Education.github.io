@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: the-learningml-story
 ---
 
 En diciembre de 2018, **[Jesús Moreno León](http://jemole.me/),** entonces jefe del departamento de "Experimentación en el Aula" del INTEF, me propuso elaborar un **[recurso didáctico](http://code.intef.es/inteligencia-artificial-en-el-aula-con-scratch-3-0/) sobre Inteligencia Artificial. Basado en** una herramienta que había descubierto: [**Machine Learning for Kids**](https://machinelearningforkids.co.uk) (ML4K) de Dave Lane. Un trabajador de IBM que ha desarrollado dicha herramienta dentro del [programa de voluntariado de IBM](https://www.ibm.org/initiatives/ibm-volunteers). La experiencia fue fascinante y me entusiasmó descubrir que algo tan complejo como el Machine Learning, podía ser explicado con eficacia en la escuela.

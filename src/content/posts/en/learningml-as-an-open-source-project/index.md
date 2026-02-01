@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: learningml-como-proyecto-open-source
 ---
 
 **LearningML is a platform for teaching and learning the fundamentals of Machine Learning through practical activities.** But it is also a research project and an open source project.

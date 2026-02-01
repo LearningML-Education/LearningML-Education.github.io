@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: the-prehistoric-quiz
 ---
 
 En este videotutorial haremos un concurso para diferenciar entre el paleolítico, el neolítico y la edad de los metales. Para eso construimos un modelo de texto en el cual le enseñaremos a la máquina las características de cada uno de ellos introduciendo datos.

@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: saving-the-training-dataset
 ---
 
 ⁣🌟 En este video aprenderemos cómo guardar el conjunto de datos de entrenamiento. Cargar los datos es una actividad que nos puede llevar bastante tiempo y si necesitamos utilizarlos para futuras clases, ¿qué mejor que poder almacenarlos en un archivo para cuando los necesitemos nuevamente? 🚀⁣⁣  

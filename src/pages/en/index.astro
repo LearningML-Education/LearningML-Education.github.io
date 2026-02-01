@@ -1,11 +1,11 @@
 ---
-import Base from '../layouts/Base.astro';
+import Base from '../../layouts/Base.astro';
 ---
 <Base
   title="LearningML"
-  description="Aprende IA creando proyectos reales"
-  lang="es"
-  alternateUrl="/en/"
+  description="Learn AI by building real projects"
+  lang="en"
+  alternateUrl="/"
 >
   <main class="hero">
     <header class="hero__header">
@@ -18,30 +18,30 @@ import Base from '../layouts/Base.astro';
     </header>
 
     <section class="hero__content">
-      <p class="hero__eyebrow">Inteligencia Artificial creativa</p>
-      <h1>Aprende Machine Learning construyendo proyectos con tus datos.</h1>
+      <p class="hero__eyebrow">Creative Artificial Intelligence</p>
+      <h1>Learn Machine Learning by building projects with your data.</h1>
       <p class="hero__lead">
-        LearningML combina un editor visual con Scratch para que cualquier persona
-        entrene modelos y cree experiencias interactivas.
+        LearningML combines a visual editor with Scratch so anyone can train models
+        and create interactive experiences.
       </p>
       <div class="hero__cta">
-        <a class="button primary" href="/lml-editor/">Abrir editor</a>
-        <a class="button ghost" href="/scratch/">Ir a Scratch</a>
+        <a class="button primary" href="/lml-editor/">Open editor</a>
+        <a class="button ghost" href="/scratch/">Go to Scratch</a>
       </div>
     </section>
 
     <section class="hero__grid">
       <article>
         <h3>Visual</h3>
-        <p>Modelos guiados paso a paso, sin necesidad de programar.</p>
+        <p>Step-by-step guided models, no coding required.</p>
       </article>
       <article>
-        <h3>Proyectos reales</h3>
-        <p>Integra tus modelos en juegos, música y arte con Scratch.</p>
+        <h3>Real projects</h3>
+        <p>Bring your models into games, music, and art with Scratch.</p>
       </article>
       <article>
-        <h3>Comunidad</h3>
-        <p>Recursos y actividades diseñadas para el aula.</p>
+        <h3>Community</h3>
+        <p>Resources and activities designed for the classroom.</p>
       </article>
     </section>
   </main>
@@ -122,23 +122,6 @@ import Base from '../layouts/Base.astro';
       display: grid;
       gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .hero__grid article {
-      padding: 1.5rem;
-      border-radius: 1.25rem;
-      background: #fff;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    }
-
-    @media (max-width: 768px) {
-      .hero__header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .hero__nav {
-        flex-wrap: wrap;
-      }
     }
   </style>
 </Base>

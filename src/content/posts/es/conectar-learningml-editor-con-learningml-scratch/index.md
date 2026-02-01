@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: connect-learningml-editor-with-lml-scratch
 ---
 
 Ya hemos visto, en una [entrada anterior](https://web.learningml.org/creacion-de-un-entorno-de-desarrollo-para-learningml/), que **la plataforma LearningML consta de dos aplicaciones:**

@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: el-concurso-de-la-prehistoria
 ---
 
 In this videotutorial we will make a quiz to differentiate between the Palaeolithic, the Neolithic and the Metal Age. To do so, we will build a text model in which we will teach the machine the characteristics of each of them by introducing data.

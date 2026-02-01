@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: mi-opinion-sobre-los-lenguajes-de-programacion-basados-en-bloques
 ---
 
 **My opinion on block-based programming languages ​​has progressively changed.** At first they didn't seem serious to me and I had little confidence in them, but as I've been using them I've changed my mind.

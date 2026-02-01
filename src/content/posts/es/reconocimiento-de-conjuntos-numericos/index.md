@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: recognition-of-number-sets
 ---
 
 Una de las **funcionalidades** que se añadí en la versión 1.3 de LearningML es el **reconocimiento de conjuntos numéricos.** ¿Y en qué consiste esto de reconocer números? Pues, en honor a la verdad, **reconocer patrones numéricos es lo único que pueden hacer los algoritmos de ML.** De hecho, **cuando trabajamos con imágenes o textos, antes de ser introducidas como entradas del algoritmo, son convertidas (codificadas) a conjuntos numéricos.**

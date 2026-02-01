@@ -9,6 +9,7 @@ tags:
   - "computational-thinking"
   - "educational-robotics"
   - "learningml-en"
+translation: inteligencia-artificial-y-robotica
 ---
 
 Many of the real **applications of artificial intelligence make use of sensors to perceive data and actuators to perform actions.** That is, to interact with the physical world. Therefore, **from the educational point of view,** it would be very interesting **to be able to use the Machine Learning models that we built with LearningML, in applications that interact** with the real world **through sensors and actuators.** That is, to **join the AI with educational robotics.**

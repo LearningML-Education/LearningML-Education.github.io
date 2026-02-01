@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: el-futuro-de-learningml
 ---
 
 **LearningML is a [personal project](http://web.learningml.org/la-historia-de-learningml/)** that I started in March 2019. For its development I counted on the help, advice and opinions of several good friends and education professionals. **It all started with the making of an [educational resource](http://code.intef.es/inteligencia-artificial-en-el-aula-con-scratch-3-0/) about teaching Machine Learning at school.** When I was working in the “Department of Experimentation in the Classroom” of INTEF.

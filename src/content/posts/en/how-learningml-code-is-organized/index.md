@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: organizacion-del-codigo-de-learningml
 ---
 
 With this post I start a series dedicated to the **development of LearningML.** The intention is to reveal, and at the same time document, how the tool has been built. I begin by describing the organization of the code at the repository level.

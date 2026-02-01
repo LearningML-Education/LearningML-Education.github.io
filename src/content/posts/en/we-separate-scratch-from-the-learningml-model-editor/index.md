@@ -7,6 +7,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: independizamos-scratch-del-editor-de-modelos-de-learningml
 ---
 
 When we save the Scratch project, the Machine Learning model is saved inside the sb3 🚀 file.

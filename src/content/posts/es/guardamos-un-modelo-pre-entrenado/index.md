@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: we-keep-a-pre-trained-model
 ---
 
 Este videotutorial nos muestra una **nueva funcionalidad de la versión 2 de LearningML** 🤩 ⁣

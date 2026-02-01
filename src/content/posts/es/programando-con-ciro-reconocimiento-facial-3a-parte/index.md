@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: programming-with-ciro-facial-recognition-3rd-part
 ---
 
 #### Día 3: ¡Agregando audio!⁣

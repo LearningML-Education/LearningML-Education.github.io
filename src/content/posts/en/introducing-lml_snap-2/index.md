@@ -9,6 +9,7 @@ tags:
   - "computational-thinking"
   - "learningml-en"
   - "lml_snap-en"
+translation: presentamos-lml_snap
 ---
 
 After some months working on this new project, the time has come to launch it and start a new adventure in the task of bringing the basics of Machine Learning and Artificial Intelligence to the school world.

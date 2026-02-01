@@ -14,7 +14,14 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+const slug = normalizePostSlug(post.slug);
+const alternateSlug = post.data.translation;
 ---
-<Post title={post.data.title} date={post.data.date} lang="en">
+<Post
+  title={post.data.title}
+  date={post.data.date}
+  lang="en"
+  alternateUrl={alternateSlug ? `/${alternateSlug}/` : undefined}
+>
   <Content />
 </Post>

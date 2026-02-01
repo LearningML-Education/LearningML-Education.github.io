@@ -7,6 +7,7 @@ categories:
 tags: 
   - "raspberry-pi-es"
   - "seminario-es"
+translation: learningml-in-the-biweekly-seminars-of-the-raspberry-pi-foundation
 ---
 
 La **[Fundación Raspberry Pi](https://www.raspberrypi.org/)** ha organizado una serie de **[seminarios quincenales](https://www.raspberrypi.org/computing-education-research-online-seminars/)** con la intención de tratar temas actuales sobre _**compunting education research**_. Debido a las situación de confinamiento que vivimos en estos momentos, se realizan _online_. Estos seminarios están teniendo lugar desde el 5 de mayo hasta el 28 de julio de 2020. En ellos varios investigadores cuentan los proyecto en los que trabajan en la actualidad.

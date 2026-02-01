@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: nooc-artificial-intelligence-for-the-common-good
 ---
 
 **[Inteligencia Artificial Para el Bien Común](https://enlinea.intef.es/courses/course-v1:INTEF+IABienComun+2021_ED1/about) es un nanocurso desarrollado y facilitado por Jorge Lobo Martínez (@lobo\_tic) que forma parte de la oferta de formación del [INTEF](https://intef.es).** A pesar de su brevedad, consigue dar una visión bastante completa sobre la Inteligencia Artificial, como se está utilizando para mejorar la sociedad, sus riesgos e incluso como introducir actividades de Inteligencia Artificial en el aula.

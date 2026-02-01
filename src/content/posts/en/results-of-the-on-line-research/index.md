@@ -9,6 +9,7 @@ tags:
   - "computational-thinking"
   - "investigacion-on-line-en"
   - "learningml-en"
+translation: resultados-de-la-investigacion-on-line
 ---
 
 Some time ago we told you that we had designed and carried out an [on-line research](https://web.learningml.org/en/learningml-online-research/) in order to check:

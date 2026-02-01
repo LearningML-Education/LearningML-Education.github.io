@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: building-an-image-model-with-learningml
 ---
 
 ¿Alguna vez has querido enseñar a tus estudiantes a crear un modelo de _machine learning_ que pueda reconocer imágenes de una manera sencilla y divertida?

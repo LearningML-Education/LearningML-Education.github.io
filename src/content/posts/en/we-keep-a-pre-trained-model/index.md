@@ -7,6 +7,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: guardamos-un-modelo-pre-entrenado
 ---
 
 This video tutorial shows us **a new feature of LearningML version 2** **🤩**

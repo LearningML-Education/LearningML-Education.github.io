@@ -6,6 +6,7 @@ categories:
   - "develop"
   - "education"
   - "information"
+translation: llegar-a-las-entranas-del-software
 ---
 
 Sometimes, when we implement a software solution, no matter how much we study its documentation, we do not find the answer to some problem that arises and prevents us from completing our objective. Normally, **by reading it more carefully and patiently, it is usually solved.** But **this does not always happen,** no matter how hard we try, **because our problem is simply not documented or the documentation is outdated.**

@@ -6,6 +6,7 @@ categories:
   - "develop"
   - "education"
   - "information"
+translation: de-la-frustracion-al-exito-en-el-reconocimiento-de-imagenes-el-descubrimiento-de-transfer-learning
 ---
 
 While working on **LearningML image recognition I discovered ‘** _**transfer learning’**_**,** one of the techniques that I have found most useful and powerful in Machine Learning.

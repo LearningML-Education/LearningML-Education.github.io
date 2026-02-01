@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: programando-con-ciro-reconocimiento-facial-2a-parte
 ---
 
 #### Day 2: Programming with Scratch

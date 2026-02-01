@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: building-a-sound-recognition-model
 ---
 
 ¿Alguna vez has querido enseñar a tus estudiantes a crear un modelo de _machine learning_ que pueda reconocer sonidos de una manera sencilla y divertida? **¡Este videotutorial es para ti!**

@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: ai-detectors
 ---
 
 Con la llegada de la **IA Generativa de textos** ha surgido un problema que, en casos como el educativo, **puede afectar muy negativamente:** _¿se puede saber si un texto ha sido generado con IA o ha sido escrito por un humano?_

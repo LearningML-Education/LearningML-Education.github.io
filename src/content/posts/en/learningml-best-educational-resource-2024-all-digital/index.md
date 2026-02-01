@@ -10,6 +10,7 @@ tags:
   - "awards"
   - "computational-thinking"
   - "learningml-en"
+translation: learningml-mejor-recurso-educativo-2024-all-digital
 ---
 
 On October 16, 2024 LearningML was recognized as the “**best educational resource of 2024″** by the organization [All Digital](https://all-digital.org/).

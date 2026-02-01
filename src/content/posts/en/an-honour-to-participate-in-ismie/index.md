@@ -7,6 +7,7 @@ categories:
   - "education"
   - "events"
   - "information"
+translation: un-honor-participar-en-ismie
 ---
 
 Conference on the teaching and learning of mathematics ["Creating teaching networks"](https://innovacionyformacion.educa.madrid.org/actividades/jornadas-ensenanza-aprendizaje-matematicas-creando-redes-docentes-i0069). Organised by the Directorate of Bilingualism and Teaching Quality in collaboration with the ‘Emma Castelnuovo’ Society of Mathematics Teachers of Madrid (SMPM). At the Instituto Superior Madrileño de Innovación Educativa (ISMIE).

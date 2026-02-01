@@ -7,6 +7,7 @@ categories:
 tags: 
   - "raspberry-pi-en"
   - "seminar"
+translation: learningml-en-los-seminarios-quincenales-de-la-fundacion-raspberry-pi
 ---
 
 **Note**: This is an automatic translation performed with www.DeepL.com/Translator (free version) of this [post](https://web.learningml.org/learningml-en-los-seminarios-quincenales-de-la-fundacion-raspberry-pi/?preview_id=446&preview_nonce=896f9abdd9&preview=true).

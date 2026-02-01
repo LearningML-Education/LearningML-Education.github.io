@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: echidnaml-in-oshwden
 ---
 
 E**n colaboración con el equipo de [Echidna Educación](https://echidna.es/)**, el pasado 12 de octubre participamos de **[OSHWDEM’24](https://oshwdem.org/), la feria de tecnologías abiertas en A Coruña.** Tuvimos la oportunidad de mostrar en un _stand_ las **placas educativas y el _software_** que hemos desarrollado para programarlas, al que hemos llamado **[EchidnaML](https://echidna.es/a-programar/echidnaml/).**

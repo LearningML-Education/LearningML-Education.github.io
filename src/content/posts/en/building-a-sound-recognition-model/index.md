@@ -7,6 +7,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: construimos-un-modelo-de-reconocimiento-de-sonido
 ---
 
 Ever wanted to teach your students how to create a machine learning model that can recognise sounds in a simple and fun way? **This video tutorial is for you!**

@@ -5,6 +5,7 @@ categories:
   - "blog-en"
   - "education"
   - "information"
+translation: proyecto-rea-dua-andalucia
 ---
 
 **An Open Educational Resource (OER)** **is a teaching, learning or research material that is in the public domain or** distributed under an open licence, **allowing it to be used, adapted and redistributed free of charge.**

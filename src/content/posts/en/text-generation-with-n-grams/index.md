@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "develop"
   - "information"
+translation: generacion-de-texto-con-n-gramas
 ---
 
 I have recently discovered a fascinating idea: **the generation of text** (or anything else that happens in sequence, such as music or drawing strokes) **using statistical models based on n-grams.** Jens Mönig, leader of the [Snap](http://snap.berkeley.edu)! project, proposes a revealing strategy to explain the basics of Generative AI using such models in Snap!

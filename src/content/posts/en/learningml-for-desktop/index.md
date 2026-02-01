@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: learningml-para-escritorio
 ---
 
 **LearningML started as a web application.** I felt that it was the easiest way to access it, you just need a web browser and an internet connection to use the application. **I was correct in assuming that potential users have stable internet access.** An assumption that may be true in one part of the world, but is not true in another, surely much larger, part of the world.

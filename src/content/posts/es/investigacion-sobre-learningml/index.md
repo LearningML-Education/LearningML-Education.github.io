@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-online-research
 ---
 
 Con el objetivo de **analizar si LearningML es una herramienta didáctica que realmente sirve para aprender contenidos de IA y Machine Learning** (validez instruccional) y a la vez es **atractiva y fácil de usar** (validez aparente), algunos miembros del grupo [KGBL3](https://kgblll.github.io/) (_@J\_MorenoL_, _@gregoriorobles_, _@elpsycomago_ y _@juandalibaba_) **hemos diseñado una investigación.** Dadas las condiciones de confinamiento en la que nos encontramos, ha tenido la particularidad de tener que ser _online_. Es algo que no habíamos hecho hasta el momento, lo normal en este tipo de actuaciones, es que se lleven a cabo en el aula. Pero, como se suele decir, "_con los mimbres que tenemos a ver que canasto hacemos_".

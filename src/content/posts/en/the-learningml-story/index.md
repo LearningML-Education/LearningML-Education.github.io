@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: la-historia-de-learningml
 ---
 
 **Note**: _this is an automatic translation of this [post](https://web.learningml.org/la-historia-de-learningml/) performed by [https://www.deepl.com](https://www.deepl.com)_

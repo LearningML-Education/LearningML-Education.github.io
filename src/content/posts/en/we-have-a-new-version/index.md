@@ -10,6 +10,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: tenemos-nueva-version
 ---
 
 We are pleased to announce the arrival of **LearningML2**!

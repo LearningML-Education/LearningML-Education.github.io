@@ -5,6 +5,7 @@ categories:
   - "blog"
   - "desarrollo"
   - "informacion-es"
+translation: innovation-in-ai-learning-how-we-bring-machine-learning-to-the-browser-without-external-accounts-or-platforms
 ---
 
 En el desarrollo de **LearningML,** uno de los desafíos clave fue crear una **herramienta educativa para enseñar Inteligencia Artificial (IA) que no dependiera de cuentas de usuario o plataformas externas.** Esto se logró implementando los algoritmos de Machine Learning directamente en el navegador del usuario, utilizando la librería _open source Tensorflow.js_ para los algoritmos de ML y _mobilenet_ para codificar imágenes mediante la técnica conocida como _transfer learning._

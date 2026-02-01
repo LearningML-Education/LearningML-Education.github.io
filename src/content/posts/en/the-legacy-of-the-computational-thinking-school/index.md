@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "information"
+translation: el-legado-de-la-escuela-de-pensamiento-computacional
 ---
 
 During the 2018/19 academic year, INTEF developed a high-impact initiative: **‘The School of Computational Thinking’**. The aim of this project was to **disseminate and promote computational thinking** to a large number of teachers from all the autonomous communities.

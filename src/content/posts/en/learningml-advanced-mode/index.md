@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: el-modo-avanzado-de-learningml
 ---
 
 **The advanced mode of LearningML has been designed with the purpose of better understanding how ML algorithms work.** Indeed, in the normal mode, the learning process is a black box, we only see the friendly Charlot adjusting gears of a machine (as a metaphor of what the algorithm is actually doing). At the end of the process, the model has been elaborated and is ready to be used in a Scratch program. Beyond what Charlot's animation evokes in our imagination, we know nothing about the ML algorithm itself.

@@ -1,8 +1,15 @@
 ---
-const { title = 'LearningML', description = 'LearningML' } = Astro.props;
+const {
+  title = 'LearningML',
+  description = 'LearningML',
+  lang = 'es',
+  alternateUrl
+} = Astro.props;
+const currentLangLabel = lang === 'en' ? 'EN' : 'ES';
+const alternateLangLabel = lang === 'en' ? 'ES' : 'EN';
 ---
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -34,6 +41,40 @@ const { title = 'LearningML', description = 'LearningML' } = Astro.props;
     </style>
   </head>
   <body>
+    {alternateUrl && (
+      <nav class="lang-switcher" aria-label="Language selector">
+        <span class="lang-switcher__current" aria-current="true">{currentLangLabel}</span>
+        <a class="lang-switcher__link" href={alternateUrl}>{alternateLangLabel}</a>
+      </nav>
+    )}
     <slot />
   </body>
 </html>
+
+<style>
+  .lang-switcher {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+
+  .lang-switcher__current {
+    color: var(--ink);
+  }
+
+  .lang-switcher__link {
+    color: var(--accent);
+  }
+</style>

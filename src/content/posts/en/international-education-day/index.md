@@ -6,6 +6,7 @@ categories:
   - "education"
   - "events"
   - "information"
+translation: dia-internacional-de-la-educacion
 ---
 
 The main objective of our association, as its name says, is the promotion and development of artificial intelligence and computational thinking in the educational world. That is why one of the activities proposed in the statutes is the ‘organisation of events and workshops for the promotion and dissemination of artificial intelligence and computational thinking’.

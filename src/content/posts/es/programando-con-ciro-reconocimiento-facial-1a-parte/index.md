@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: programming-with-ciro-facial-recognition-part-1
 ---
 
 #### **⁣Día 1: Creando el modelo de Machine Learnin**g

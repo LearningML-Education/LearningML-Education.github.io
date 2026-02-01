@@ -1,7 +1,7 @@
 ---
 import Base from './Base.astro';
 
-const { title, date, lang = 'es' } = Astro.props;
+const { title, date, lang = 'es', alternateUrl } = Astro.props;
 const formattedDate = date
   ? new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-ES', {
       year: 'numeric',
@@ -10,7 +10,7 @@ const formattedDate = date
     }).format(new Date(date))
   : '';
 ---
-<Base title={title} description={title}>
+<Base title={title} description={title} lang={lang} alternateUrl={alternateUrl}>
   <main class="post">
     <header class="post__header">
       <p class="post__meta">{formattedDate}</p>

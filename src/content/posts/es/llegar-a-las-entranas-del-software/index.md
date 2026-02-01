@@ -6,6 +6,7 @@ categories:
   - "desarrollo"
   - "educacion"
   - "informacion-es"
+translation: getting-to-the-heart-of-the-software
 ---
 
 A veces, cuando implantamos una solución _software_, por más que estudiamos su documentación, no encontramos la respuesta a algún problema que nos surge y que nos impide concluir nuestro objetivo. Normalmente, **leyéndola con más atención y paciencia se suele resolver.** Pero **no siempre esto ocurre,** por mucho empeño que pongamos, **ya que sencillamente nuestro problema no está documentado o la documentación está desactualizada.**

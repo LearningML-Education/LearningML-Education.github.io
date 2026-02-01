@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: reconocimiento-de-conjuntos-numericos
 ---
 
 _Translated with google translator._

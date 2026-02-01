@@ -6,6 +6,7 @@ categories:
   - "desarrollo"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: huggingchat-like-chatgpt-but-with-open-models-taking-care-of-your-privacy
 ---
 
 Todos usamos [ChatGPT](http://chatgpt.com), aunque no sabemos **qué hace OpenAI con nuestras conversaciones**. Tampoco sabemos **cuál es la arquitectura de la red neuronal que utiliza,** más allá de que está basada en los revolucionarios _transformers_. Y, por supuesto **no tenemos acceso al conjunto de textos con los que se ha realizado su entrenamiento.** Lo mismo ocurre con otros asistentes de conversación como [Claude](https://claude.ai/), [Perplexity](https://www.perplexity.ai/) o [Gemini](https://gemini.google.com), opciones menos populares que [ChatGPT](https://chatgpt.com/) pero bastante conocidas. **Esta opacidad de las grandes tecnológicas es el precio** (seguramente alto, aunque no terminemos de darnos cuenta) **que pagamos por usar sus soluciones.**

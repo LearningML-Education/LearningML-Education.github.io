@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "eventos"
   - "informacion-es"
+translation: international-education-day
 ---
 
 El principal objetivo de nuestra asociación, como bien dice su nombre, es el **fomento y desarrollo de la inteligencia artificial y el pensamiento computacional en el mundo educativo**. Es por eso, que una de las actividades propuestas en los estatutos es la _“organización de eventos y talleres para el fomento y difusión de la inteligencia artificial y el pensamiento computacional”._  

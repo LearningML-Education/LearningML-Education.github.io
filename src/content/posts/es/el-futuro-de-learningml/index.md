@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: the-future-of-learningml
 ---
 
 **LearningML es un [proyecto personal](https://web.learningml.org/la-historia-de-learningml/)** que inicié en marzo de 2019. Para su desarrollo conté con la ayuda, consejos y opiniones de varios buenos amigos y profesionales de la educación. **Todo comenzó con la confección de [un recurso educativo](http://code.intef.es/inteligencia-artificial-en-el-aula-con-scratch-3-0/) sobre la enseñanza del Machine Learning en la escuela.** Cuando trabajaba en el "Departamento de Experimentación en el Aula" del [INTEF](https://intef.es).

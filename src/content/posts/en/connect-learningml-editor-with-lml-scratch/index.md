@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: conectar-learningml-editor-con-learningml-scratch
 ---
 
 We have already seen in a previous post that the LearningML **platform consists of two applications:**

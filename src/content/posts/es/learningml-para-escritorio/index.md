@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-for-desktop
 ---
 
 **LearningML comenzó siendo una aplicación web.** Consideré que era la manera más sencilla de acceder, basta con disponer de un navegador web y una conexión a internet para utilizar la aplicación. **Era acertado admitiendo que los usuarios potenciales tienen un acceso estable a internet.** Un supuesto que puede ser cierto en una parte del mundo, pero que no lo es en otra parte, seguramente, mucho mayor.

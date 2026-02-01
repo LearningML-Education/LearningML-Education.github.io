@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: my-opinion-on-block-based-programming-languages
 ---
 
 **Mi opinión sobre los lenguajes de programación basados en bloques ha cambiado progresivamente.** Al principio no me parecían nada serios y tenía poca confianza en ellos, pero a medida que los he ido usando he cambiado de parecer.

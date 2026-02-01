@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: building-a-machine-learning-model-from-scratch
 ---
 
   

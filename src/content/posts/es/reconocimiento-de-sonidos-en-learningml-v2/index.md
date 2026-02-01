@@ -6,6 +6,7 @@ categories:
   - "desarrollo"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: sound-recognition-in-learningml-v2
 ---
 
 **La re-escritura de LearningML,** que ha dado lugar a la **versión 2,** la he realizado con la finalidad de **mejorar la estructura del código** para conseguir una mayor modularidad **que facilite la incorporación de nuevas funcionalidades.** Así que, una vez finalizada dicha re-escritura llegó el momento de trabajar en nuevos componentes de LearningML, y lo primero ha sido **el reconocimiento de sonidos.** La idea es hacer algo similar al reconocimiento de sonidos de [Teachable Machine](https://teachablemachine.withgoogle.com/).

@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: the-graphical-interface-of-learningml-editor
 ---
 
 **El desarrollo de cualquier tipo de aplicación informática se facilita mucho si se utiliza un _framework_ adecuado.** Aunque es cierto que la curva de aprendizaje de estos _frameworks_ suele ser bastante empinada, **sus ventajas hacen que merezca la pena estudiarlos.**

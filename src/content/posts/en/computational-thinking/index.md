@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: pensamiento-computacional
 ---
 
 **The term Computational Thinking is prone to misunderstanding.** And the fact that there is still no agreed definition does not help much. So, instead of starting by defining what Computational Thinking is, let's start by saying what it is NOT.

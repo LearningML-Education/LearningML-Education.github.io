@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: programming-with-jara-pictorial-styles-part-1
 ---
 
 #### Creando el modelo de Machine Learning

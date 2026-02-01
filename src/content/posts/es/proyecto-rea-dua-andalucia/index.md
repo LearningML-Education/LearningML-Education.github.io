@@ -5,6 +5,7 @@ categories:
   - "blog"
   - "educacion"
   - "informacion-es"
+translation: rea-dua-andalusia-project
 ---
 
 **Un Recurso Educativo Abierto (REA)** **es un material de enseñanza, aprendizaje o investigación que está en dominio público o** se distribuye con una licencia abierta, **permitiendo su uso, adaptación y redistribución de forma gratuita.**

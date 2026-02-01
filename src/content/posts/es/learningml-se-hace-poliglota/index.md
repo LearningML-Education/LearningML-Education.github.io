@@ -7,6 +7,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-becomes-polyglot
 ---
 
 Internet, como aprecia Jesús Moreno en este [tweet](https://twitter.com/J_MorenoL/status/1274789026428522500), tiene cosas maravillosas. Desde que comenzamos a divulgar LearningML la historia que cuenta el [tweet](https://twitter.com/J_MorenoL/status/1274789026428522500) se ha repetido 3 veces.

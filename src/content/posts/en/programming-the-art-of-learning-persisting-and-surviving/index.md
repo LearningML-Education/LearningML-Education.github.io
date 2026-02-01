@@ -6,6 +6,7 @@ categories:
   - "develop"
   - "education"
   - "information"
+translation: programar-el-arte-de-aprender-persistir-y-superarse
 ---
 
 **Programming is a journey of learning and resilience** that is characterised by a fundamental cycle: **try, fail, debug and improve.** When we start programming, we rarely get our code to work perfectly on the first try. This reality **is not a failure,** but an integral part of the creative and learning process.

@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-in-a-steam-course-of-the-junta-de-andalucia
 ---
 
 Hace poco hemos descubierto que **LearningML se está usando en el Bloque 1 (Cómo aprenden las máquinas: Scratch y Machine Learning) del curso a distancia de la Junta de Andalucía titulado [EDUCACIÓN STEAM. PROFUNDIZACIÓN](https://www.juntadeandalucia.es/educacion/secretariavirtual/consultaCEP/actividad/21K9908AV228/).**

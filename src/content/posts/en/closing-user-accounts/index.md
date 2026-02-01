@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: cierre-de-las-cuentas-de-usuario
 ---
 
 (Translated by https://www.deepl.com/)

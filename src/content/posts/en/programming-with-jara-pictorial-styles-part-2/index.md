@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: programando-con-jara-estilos-pictoricos-2o-parte
 ---
 
 #### Programming in Scratch

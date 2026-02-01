@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-version-1-3-available
 ---
 
 Desde hoy, puedes disfrutar de la **Nueva Versión (1.3) de LearningML.** Agregué nuevas **funcionalidades, encaminadas a explorar los algoritmos de Machine Learning para entenderlos mejor.** Hasta ahora, eran una caja negra sobre la que el usuario no tenía ningún control.

@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: on-the-road-to-generative-ai-in-learningml
 ---
 
 Cuando inicié el desarrollo de LearningML **el gran reto fue conseguir que los algoritmos de _machine learning_ para la clasificación y el reconocimiento de "cosas" se pudieran ejecutar en el navegador del usuario.**

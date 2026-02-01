@@ -9,6 +9,7 @@ tags:
   - "learningml-es"
   - "lml_snap"
   - "pensamiento-computacional"
+translation: introducing-lml_snap-2
 ---
 
 Después de algunos meses trabajando en este nuevo proyecto, ha llegado la hora de ponerlo en marcha y comenzar una nueva aventura en la tarea de acercar los fundamentos del Machine Learning y la Inteligencia Artificial, al mundo escolar.

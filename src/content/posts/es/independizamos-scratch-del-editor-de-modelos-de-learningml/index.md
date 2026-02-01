@@ -7,6 +7,7 @@ categories:
   - "educacion"
   - "inteligencia-artificial"
   - "videotutorial"
+translation: we-separate-scratch-from-the-learningml-model-editor
 ---
 
 🌟 En este video vamos a descubrir una **nueva funcionalidad de la versión 2 de LearningML** 🤩

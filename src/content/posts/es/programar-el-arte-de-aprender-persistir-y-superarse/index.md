@@ -6,6 +6,7 @@ categories:
   - "desarrollo"
   - "educacion"
   - "informacion-es"
+translation: programming-the-art-of-learning-persisting-and-surviving
 ---
 
 **La programación es un viaje de aprendizaje y resilienci**a que se caracteriza por un ciclo fundamental: **intentar, fallar, depurar y mejorar.** Cuando comenzamos a programar, rara vez conseguimos que nuestro código funcione perfectamente en el primer intento. Esta realidad **no es un fracaso**, sino una parte integral del proceso creativo y de aprendizaje.

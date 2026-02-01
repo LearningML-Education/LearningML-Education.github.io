@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: flipalo-en-colores-con-learningml
 ---
 
 Do you want to teach your students how to **create an app** that ¡IDENTIFIES COLOURS?

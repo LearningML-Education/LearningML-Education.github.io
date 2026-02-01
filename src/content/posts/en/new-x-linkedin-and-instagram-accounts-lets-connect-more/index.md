@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: nuevas-cuentas-de-x-linkedin-e-instagram-conectemos-mas
 ---
 
 At LearningML, we are excited to announce **the launch of our new accounts on X** (formerly Twitter), **LinkedIn and Instagram.** Why have we decided to expand to these platforms? The answer is simple: **we want to be closer to you!**

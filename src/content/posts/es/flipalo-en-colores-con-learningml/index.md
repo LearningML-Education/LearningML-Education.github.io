@@ -6,6 +6,7 @@ categories:
   - "blog"
   - "educacion"
   - "videotutorial"
+translation: splash-it-in-colour-with-learningml
 ---
 
 ¿Quieres enseñar a tus alumnos a **crear una app** que ¡IDENTIFIQUE COLORES?

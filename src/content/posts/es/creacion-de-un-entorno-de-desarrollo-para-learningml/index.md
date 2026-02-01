@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: building-a-development-environment-for-learningml
 ---
 
 En esta entrada te cuento cómo crear un entorno de desarrollo para LearningML: el primer paso para poder desarrollar nuevas funcionalidades, arreglar errores en el proyecto o simplemente para trastear un poco con el código.

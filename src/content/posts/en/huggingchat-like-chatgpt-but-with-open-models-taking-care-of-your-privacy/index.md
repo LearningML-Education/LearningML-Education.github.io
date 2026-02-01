@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "develop"
   - "information"
+translation: huggingchat-como-chatgpt-pero-con-modelos-abiertos-cuidando-tu-privacidad
 ---
 
 We all use [ChatGPT](http://chatgpt.com), although **we don't know what OpenAI does with our conversations.** **Nor do we know what the architecture of the neural network it uses is,** beyond the fact that it is based on the revolutionary transformers. And, of course, **we do not have access to the set of texts on which it has been trained.** The same is true of other conversation assistants such as [Claude](http://claude.ai), [Perplexity](http://perplexity.ai) or [Gemini](http://gemini.google.com), less popular options than [ChatGPT](http://chatgpt.com) but quite well known. **This opacity on the part of the big tech companies is the price** (probably high, although we don't realise it) **that we pay for using their solutions.**

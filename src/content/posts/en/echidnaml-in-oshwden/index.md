@@ -9,6 +9,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: oshwdem24-recibe-a-echidnaml
 ---
 
 **In collaboration with the** [**Echidna Educación**](https://echidna.es/)**team** , last weekend we participated in [**OSHWDEM'24**](https://oshwdem.org/)**, the open technologies fair in A Coruña.** We had the opportunity to show in a _stand_ the **educational boards and the** _**software**_ we have developed to program them, which we have called [**EchidnaML**](https://echidna.es/a-programar/echidnaml/)**.**

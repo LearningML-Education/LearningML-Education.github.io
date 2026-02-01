@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: closing-user-accounts
 ---
 
 **Gracias al interés que habéis mostrado** la comunidad docente de España, Iberoamérica y algunos otros países en los que se está usando la herramienta, **LearningML ha llegado a convertirse en un proyecto con una envergadura suficiente para que su mantenimiento exija una cantidad de tiempo superior a la que puedo dedicar.**

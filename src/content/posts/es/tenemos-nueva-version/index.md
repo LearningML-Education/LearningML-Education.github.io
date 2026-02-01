@@ -11,6 +11,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: we-have-a-new-version
 ---
 
 ¡Nos complace anunciar la llegada de **LearningML2**!  

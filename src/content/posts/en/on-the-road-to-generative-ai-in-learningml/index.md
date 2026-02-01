@@ -7,6 +7,7 @@ categories:
   - "develop"
   - "education"
   - "information"
+translation: en-camino-hacia-la-ia-generativa-en-learningml
 ---
 
 When I started developing LearningML, **the biggest challenge was making machine learning algorithms for classification and object recognition run in the user's browser.**

@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: the-legacy-of-the-computational-thinking-school
 ---
 
 Durante el curso 2018/19 el INTEF desarrolló una iniciativa de gran impacto: **"La Escuela de Pensamiento Computacional".** La finalidad de este proyecto fue la **difusión y el fomento del pensamiento computacional** a un gran número de docentes de todas las comunidades autónomas.

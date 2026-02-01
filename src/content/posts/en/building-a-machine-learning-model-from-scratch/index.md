@@ -7,6 +7,7 @@ categories:
   - "blog-en"
   - "education"
   - "videotutorials"
+translation: construimos-un-modelo-de-machine-learning-desde-scratch
 ---
 
 **This video tutorial shows us a new feature of version 2 of LearningML!**

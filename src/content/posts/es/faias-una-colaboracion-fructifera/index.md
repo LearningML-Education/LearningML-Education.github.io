@@ -10,6 +10,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: faias-a-fruitful-collaboration
 ---
 
 ![](images/faias.png)

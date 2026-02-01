@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: disponible-la-version-1-3-de-learningml
 ---
 
 _Tranlations made by googe translator_

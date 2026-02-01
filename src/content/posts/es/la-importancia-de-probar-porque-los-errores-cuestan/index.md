@@ -5,6 +5,7 @@ categories:
   - "blog"
   - "desarrollo"
   - "informacion-es"
+translation: the-importance-of-testing-because-mistakes-are-costly
 ---
 
 **Cuando se crea una aplicación informática,** ya sea un juego, una herramienta de productividad o una plataforma de comercio electrónico, **es fundamental asegurarse de que funcione correctamente.**

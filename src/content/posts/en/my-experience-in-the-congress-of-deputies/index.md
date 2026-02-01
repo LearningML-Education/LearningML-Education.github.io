@@ -6,6 +6,7 @@ categories:
   - "education"
   - "events"
   - "information"
+translation: mi-experiencia-en-el-congreso-de-los-diputados
 ---
 
 On 11 November in the **‘Sala Constitucional’ of the Congress of Deputies, the four** [**reports**](https://www.oficinac.es/es/informes-c/inteligencia-artificial-y-educacion) **that the Office of Science and Technology of the Congress of Deputies (Office C),** has prepared this year on four scientific topics of interest for current politics, **were presented** :

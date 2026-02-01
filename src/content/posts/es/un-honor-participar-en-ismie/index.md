@@ -7,6 +7,7 @@ categories:
   - "eventos"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: an-honour-to-participate-in-ismie
 ---
 
 Jornadas sobre la enseñanza y el aprendizaje de las matemáticas ["Creando redes docentes".](https://innovacionyformacion.educa.madrid.org/actividades/jornadas-ensenanza-aprendizaje-matematicas-creando-redes-docentes-i0069) Organizadas por La Dirección de Bilingüismo y Calidad de la Enseñanza en colaboración con la Sociedad Madrileña de Profesores de Matemáticas (SMPM) «Emma Castelnuovo». En el Instituto Superior Madrileño de Innovación Educativa (ISMIE).

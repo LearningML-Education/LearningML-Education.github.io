@@ -8,6 +8,7 @@ tags:
   - "artificial-intelligence"
   - "computational-thinking"
   - "learningml-en"
+translation: creacion-de-un-entorno-de-desarrollo-para-learningml
 ---
 
 (Automatic translation with DeepL)

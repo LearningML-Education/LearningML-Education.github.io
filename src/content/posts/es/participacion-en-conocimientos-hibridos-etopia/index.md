@@ -9,6 +9,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: participation-in-hybrid-knowledge-etopia
 ---
 
 El pasado 3 de julio de 2021, junto a Jorge Lobo (@lobo\_tic), presentamos LearningML en el **foro [Conocimientos Híbridos](http://estoyenetopia.es/conocimientos-hibridos/), dedicado "al impacto de la omnipresencia de las inteligencias artificiales en nuestras sociedades".** Estuvo organizado por **[Etopia](http://estoyenetopia.es/),** un centro de arte y tecnología ubicado en Zaragoza.

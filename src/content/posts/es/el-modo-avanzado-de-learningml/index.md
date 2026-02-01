@@ -8,6 +8,7 @@ tags:
   - "inteligencia-artificial"
   - "learningml-es"
   - "pensamiento-computacional"
+translation: learningml-advanced-mode
 ---
 
 **El modo avanzado de LearningML ha sido diseñado con el propósito de entender mejor cómo funcionan los algoritmos de ML.** En efecto, en el modo normal, el proceso de aprendizaje es una caja negra, solo vemos al simpático _Charlot_ ajustar engranajes de una máquina (como metáfora de lo que está realizando realmente el algoritmo). Al final del proceso, el modelo ha sido elaborado y está listo para ser usado en un programa de _Scratch_. Más allá de lo que evoque en nuestra imaginación la animación de _Charlot_, nada sabemos sobre el algoritmo de ML en sí.
