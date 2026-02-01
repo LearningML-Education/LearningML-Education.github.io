@@ -10,8 +10,26 @@ const englishPosts = posts
   .filter(post => post.slug.startsWith('en/'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
+const normalizeCategory = (category) =>
+  category
+    .toString()
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+const allCategories = Array.from(
+  new Set(
+    englishPosts.flatMap((post) => (post.data.categories ?? []).map((cat) => cat.toString().trim()))
+  )
+).filter(Boolean);
+
 const cards = await Promise.all(
   englishPosts.map(async (post) => {
+    const categories = (post.data.categories ?? []).map((cat) => cat.toString().trim()).filter(Boolean);
+    const categorySlugs = categories.map(normalizeCategory).filter(Boolean);
     const formattedDate = post.data.date
       ? new Intl.DateTimeFormat('en-US', {
           year: 'numeric',
@@ -23,7 +41,9 @@ const cards = await Promise.all(
       title: post.data.title,
       href: `/en/${normalizePostSlug(post.slug)}/`,
       excerptHtml: truncateHtmlWords(marked.parse(post.body), 40),
-      date: formattedDate
+      date: formattedDate,
+      categories,
+      categorySlugs
     };
   })
 );
@@ -36,26 +56,124 @@ const cards = await Promise.all(
 >
   <main class="list">
     <h1>Blog</h1>
+    {allCategories.length ? (
+      <div class="filters">
+        <label for="category-filter">Category</label>
+        <select id="category-filter">
+          <option value="all">All</option>
+          {allCategories.map((category) => (
+            <option value={normalizeCategory(category)}>{category}</option>
+          ))}
+        </select>
+      </div>
+    ) : null}
     <section class="cards">
       {cards.map((card) => (
-        <article class="card">
+        <article class="card" data-categories={card.categorySlugs.join('|')}>
           <a class="card__overlay" href={card.href} aria-label={card.title}></a>
           <div class="card__content">
             {card.date ? <span class="card__date">{card.date}</span> : null}
             <h2>{card.title}</h2>
             <div class="card__excerpt" set:html={card.excerptHtml} />
+            {card.categories.length ? (
+              <div class="card__categories">
+                {card.categories.map((category) => (
+                  <span class="card__category">{category}</span>
+                ))}
+              </div>
+            ) : null}
             <span class="card__ellipsis">...</span>
           </div>
         </article>
       ))}
     </section>
+    <p id="category-empty" class="filters__empty" hidden>
+      No posts found for that category.
+    </p>
   </main>
+
+  <script is:inline>
+    const select = document.querySelector('#category-filter');
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const empty = document.querySelector('#category-empty');
+    const paramKey = 'category';
+
+    const applyFilter = (value) => {
+      let visibleCount = 0;
+      cards.forEach((card) => {
+        const categories = (card.dataset.categories || '').split('|').filter(Boolean);
+        const matches = value === 'all' || categories.includes(value);
+        card.classList.toggle('card--hidden', !matches);
+        if (matches) visibleCount += 1;
+      });
+      if (empty) empty.hidden = visibleCount !== 0;
+    };
+
+    const getParamValue = () => {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(paramKey);
+    };
+
+    const setParamValue = (value) => {
+      const url = new URL(window.location.href);
+      if (!value || value === 'all') {
+        url.searchParams.delete(paramKey);
+      } else {
+        url.searchParams.set(paramKey, value);
+      }
+      window.history.replaceState({}, '', url);
+    };
+
+    const init = () => {
+      if (!select) return;
+      const initial = getParamValue();
+      if (initial) {
+        select.value = initial;
+      }
+      applyFilter(select.value);
+      select.addEventListener('change', (event) => {
+        const value = event.target.value;
+        applyFilter(value);
+        setParamValue(value);
+      });
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
 
   <style>
     .list {
       max-width: 1100px;
       margin: 0 auto;
       padding: 3rem 1.5rem 5rem;
+    }
+    .filters {
+      margin: 1.5rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .filters label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(30, 27, 22, 0.7);
+    }
+    .filters select {
+      border-radius: 999px;
+      border: 1px solid rgba(30, 27, 22, 0.2);
+      padding: 0.4rem 0.9rem;
+      font-size: 0.95rem;
+      background: #fff;
+    }
+    .filters__empty {
+      margin-top: 1.5rem;
+      color: rgba(30, 27, 22, 0.7);
     }
     .cards {
       margin: 2rem 0 0;
@@ -93,6 +211,24 @@ const cards = await Promise.all(
       letter-spacing: 0.12em;
       font-size: 0.7rem;
       color: rgba(30, 27, 22, 0.6);
+    }
+    .card__categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+    .card--hidden {
+      display: none;
+    }
+    .card__category {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(30, 27, 22, 0.08);
+      color: rgba(30, 27, 22, 0.7);
     }
     .card h2 {
       margin: 0;
