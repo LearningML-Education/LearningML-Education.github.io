@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="LearningML" description="Aprende IA creando proyectos reales">
+  <main class="hero">
+    <header class="hero__header">
+      <div class="hero__mark">LearningML</div>
+      <nav class="hero__nav">
+        <a href="/lml-editor/">Editor</a>
+        <a href="/scratch/">Scratch</a>
+        <a href="https://learningml.org/manual/">Manual</a>
+      </nav>
+    </header>
+
+    <section class="hero__content">
+      <p class="hero__eyebrow">Inteligencia Artificial creativa</p>
+      <h1>Aprende Machine Learning construyendo proyectos con tus datos.</h1>
+      <p class="hero__lead">
+        LearningML combina un editor visual con Scratch para que cualquier persona
+        entrene modelos y cree experiencias interactivas.
+      </p>
+      <div class="hero__cta">
+        <a class="button primary" href="/lml-editor/">Abrir editor</a>
+        <a class="button ghost" href="/scratch/">Ir a Scratch</a>
+      </div>
+    </section>
+
+    <section class="hero__grid">
+      <article>
+        <h3>Visual</h3>
+        <p>Modelos guiados paso a paso, sin necesidad de programar.</p>
+      </article>
+      <article>
+        <h3>Proyectos reales</h3>
+        <p>Integra tus modelos en juegos, música y arte con Scratch.</p>
+      </article>
+      <article>
+        <h3>Comunidad</h3>
+        <p>Recursos y actividades diseñadas para el aula.</p>
+      </article>
+    </section>
+  </main>
+
+  <style>
+    .hero {
+      min-height: 100vh;
+      padding: 3rem clamp(1.5rem, 4vw, 5rem);
+      display: grid;
+      gap: 3rem;
+    }
+
+    .hero__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero__mark {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .hero__nav {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero__content h1 {
+      font-size: clamp(2.4rem, 4vw, 4.2rem);
+      max-width: 18ch;
+      margin: 0.4rem 0 1rem;
+    }
+
+    .hero__eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.75rem;
+      margin: 0;
+    }
+
+    .hero__lead {
+      max-width: 60ch;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .hero__cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .button {
+      padding: 0.75rem 1.6rem;
+      border-radius: 999px;
+      font-weight: 600;
+      border: 1px solid var(--ink);
+    }
+
+    .button.primary {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .button.ghost {
+      background: transparent;
+    }
+
+    .hero__grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .hero__grid article {
+      padding: 1.5rem;
+      border-radius: 1.25rem;
+      background: #fff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .hero__header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero__nav {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</Base>
