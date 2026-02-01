@@ -1,0 +1,54 @@
+---
+import Base from './Base.astro';
+
+const { title, date, lang = 'es' } = Astro.props;
+const formattedDate = date
+  ? new Intl.DateTimeFormat(lang === 'en' ? 'en-US' : 'es-ES', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }).format(new Date(date))
+  : '';
+---
+<Base title={title} description={title}>
+  <main class="post">
+    <header class="post__header">
+      <p class="post__meta">{formattedDate}</p>
+      <h1>{title}</h1>
+    </header>
+    <article class="post__content">
+      <slot />
+    </article>
+  </main>
+
+  <style>
+    .post {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .post__meta {
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.7rem;
+      color: rgba(30, 27, 22, 0.7);
+      margin: 0 0 0.5rem;
+    }
+    .post__header h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(2rem, 3vw, 3rem);
+    }
+    .post__content :global(p) {
+      line-height: 1.75;
+      margin: 1rem 0;
+    }
+    .post__content :global(h2),
+    .post__content :global(h3),
+    .post__content :global(h4) {
+      margin-top: 2rem;
+    }
+    .post__content :global(a) {
+      text-decoration: underline;
+    }
+  </style>
+</Base>
