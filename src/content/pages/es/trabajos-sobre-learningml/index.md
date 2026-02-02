@@ -1,7 +1,7 @@
 ---
-title: "Trabajos sobre LearningML"
+title: "Estudios sobre LearningML"
 date: 2024-05-10
-translation: trabajos-sobre-learningml
+translation: studies-about-learningml
 ---
 
 <section class="work-grid">
