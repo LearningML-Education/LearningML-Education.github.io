@@ -62,5 +62,36 @@ const formattedDate = date
     .post__content :global(a) {
       text-decoration: underline;
     }
+    .post__content :global(.work-grid) {
+      margin-top: 2rem;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .post__content :global(.work-card) {
+      display: grid;
+      gap: 0.75rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .post__content :global(.work-card:hover) {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+    }
+    .post__content :global(.work-card img) {
+      width: 100%;
+      height: auto;
+      border-radius: 0.75rem;
+      display: block;
+    }
+    .post__content :global(.work-card__title) {
+      font-weight: 600;
+      line-height: 1.4;
+    }
   </style>
 </Base>
