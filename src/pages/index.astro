@@ -31,10 +31,19 @@ import Base from '../layouts/Base.astro';
 
     <section class="hero__content">
       <p class="hero__eyebrow">Inteligencia Artificial creativa</p>
-      <h1>Aprende Machine Learning construyendo proyectos con tus datos.</h1>
+      <div class="hero__headline">
+        <h1>Aprende los fundamentos del Machine Learning</h1>
+        <a
+          class="hero__ribbon"
+          href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/"
+        >
+          <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
+          Ganador del premio All Digital 2024
+        </a>
+      </div>
       <p class="hero__lead">
-        LearningML combina un editor visual con Scratch para que cualquier persona
-        entrene modelos y cree experiencias interactivas.
+        Aprende Machine Learning construyendo proyectos con tus datos. LearningML combina un editor visual con Scratch
+        para que cualquier persona entrene modelos y cree experiencias interactivas.
       </p>
       <div class="hero__cta">
         <a class="button primary" href="/lml-editor/">Abrir editor</a>
@@ -136,8 +145,29 @@ import Base from '../layouts/Base.astro';
 
     .hero__content h1 {
       font-size: clamp(2.4rem, 4vw, 4.2rem);
-      max-width: 18ch;
-      margin: 0.4rem 0 1rem;
+      margin: 0.4rem 0 0;
+    }
+    .hero__headline {
+      display: grid;
+      gap: 1rem;
+      align-items: center;
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .hero__ribbon {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid rgba(30, 27, 22, 0.1);
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      white-space: nowrap;
+    }
+    .hero__ribbon-icon {
+      font-size: 1rem;
     }
 
     .hero__eyebrow {
@@ -151,6 +181,15 @@ import Base from '../layouts/Base.astro';
       max-width: 60ch;
       font-size: 1.1rem;
       line-height: 1.7;
+    }
+    @media (max-width: 900px) {
+      .hero__headline {
+        grid-template-columns: 1fr;
+        justify-items: start;
+      }
+      .hero__ribbon {
+        white-space: normal;
+      }
     }
 
     .hero__cta {
