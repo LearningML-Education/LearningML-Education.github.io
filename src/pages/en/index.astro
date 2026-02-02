@@ -39,21 +39,22 @@ import Base from '../../layouts/Base.astro';
       <div class="hero__cta">
         <a class="button primary" href="/lml-editor/">Open editor</a>
         <a class="button ghost" href="/scratch/">Go to Scratch</a>
+        <a class="button ghost" href="/en/learningml-desktop/">LearningML Desktop</a>
       </div>
     </section>
 
     <section class="hero__grid">
       <article>
-        <h3>Visual</h3>
-        <p>Step-by-step guided models, no coding required.</p>
+        <h3>Collect Data</h3>
+        <p>Collect texts or images about something you want to classify automatically and add them to LearningML, indicating which class each one belongs to. These data make up the training set.</p>
       </article>
       <article>
-        <h3>Real projects</h3>
-        <p>Bring your models into games, music, and art with Scratch.</p>
+        <h3>Create a model</h3>
+        <p>Build with LearningML a model capable of correctly classifying other data that are different, yet similar, to those in the training set.</p>
       </article>
       <article>
-        <h3>Community</h3>
-        <p>Resources and activities designed for the classroom.</p>
+        <h3>Build an application</h3>
+        <p>Export your Machine Learning model to Scratch and program an application capable of classifying data about the topic you chose. Congratulations! You have added Artificial Intelligence to your Scratch program!</p>
       </article>
     </section>
   </main>
@@ -157,6 +158,7 @@ import Base from '../../layouts/Base.astro';
       gap: 1rem;
       flex-wrap: wrap;
       margin-top: 1.5rem;
+      justify-content: center;
     }
 
     .button {
@@ -179,6 +181,13 @@ import Base from '../../layouts/Base.astro';
       display: grid;
       gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .hero__grid article {
+      padding: 1.5rem;
+      border-radius: 1.25rem;
+      background: #fff;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     }
   </style>
 </Base>
