@@ -93,5 +93,26 @@ const formattedDate = date
       font-weight: 600;
       line-height: 1.4;
     }
+    .post__content :global(.post__split) {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+      grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+    }
+    .post__content :global(.post__split-media img) {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1rem;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    .post__content :global(.post__split-content p) {
+      margin-top: 0;
+    }
+    @media (max-width: 800px) {
+      .post__content :global(.post__split) {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </Base>
