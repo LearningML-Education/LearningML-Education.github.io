@@ -16,7 +16,31 @@ const footerLinks = lang === 'en'
   : [
       { label: 'Sobre LearningML', href: '/sobre-learningml/' },
       { label: 'Sobre Scratch', href: '/sobre-scratch/' },
-      { label: 'Terminos de uso', href: '/nota-legal/' }
+      { label: 'Términos de uso', href: '/nota-legal/' }
+    ];
+const navLinks = lang === 'en'
+  ? [
+      { label: 'What is', href: '/en/what-is-machine-learning/' },
+      { label: 'Why', href: '/en/why-learn-machine-learning/' },
+      { label: 'Blog', href: '/en/blog/' },
+      { label: 'Studies', href: '/en/studies-about-learningml/' },
+      { label: 'Manual', href: 'https://learningml.org/manual/' }
+    ]
+  : [
+      { label: 'Qué es', href: '/que-es-ml/' },
+      { label: 'Por qué', href: '/por-que-aprender-ml/' },
+      { label: 'Blog', href: '/blog/' },
+      { label: 'Estudios', href: '/trabajos-sobre-learningml/' },
+      { label: 'Manual', href: 'https://learningml.org/manual/' }
+    ];
+const aboutLinks = lang === 'en'
+  ? [
+      { label: 'About', href: '/en/about-learningml-and-its-author/' },
+      { label: 'Acknowledgments', href: '/en/acknowledgment/' }
+    ]
+  : [
+      { label: 'Acerca de', href: '/acerca-de-learningml-y-su-autor/' },
+      { label: 'Agradecimientos', href: '/agradecimientos/' }
     ];
 ---
 <!doctype html>
@@ -58,6 +82,25 @@ const footerLinks = lang === 'en'
         <a class="lang-switcher__link" href={alternateUrl}>{alternateLangLabel}</a>
       </nav>
     )}
+    <header class="site-nav">
+      <a class="site-nav__brand" href={lang === 'en' ? '/en/' : '/'}>LearningML</a>
+      <nav class="site-nav__links" aria-label="Main navigation">
+        {navLinks.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+        <details class="site-nav__dropdown">
+          <summary>
+            {lang === 'en' ? 'About' : 'Acerca de'}
+            <span class="site-nav__caret" aria-hidden="true">▾</span>
+          </summary>
+          <div class="site-nav__submenu">
+            {aboutLinks.map((link) => (
+              <a href={link.href}>{link.label}</a>
+            ))}
+          </div>
+        </details>
+      </nav>
+    </header>
     <slot />
     <footer class="site-footer">
       <div class="site-footer__inner">
@@ -128,6 +171,92 @@ const footerLinks = lang === 'en'
 
   .lang-switcher__link {
     color: var(--accent);
+  }
+
+  .site-nav {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .site-nav__brand {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .site-nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    align-items: center;
+  }
+
+  .site-nav__dropdown {
+    position: relative;
+  }
+
+  .site-nav__dropdown summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .site-nav__dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .site-nav__caret {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    transition: transform 0.2s ease;
+  }
+
+  .site-nav__dropdown[open] .site-nav__caret {
+    transform: rotate(180deg);
+  }
+
+  .site-nav__submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    display: grid;
+    gap: 0.4rem;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    min-width: 180px;
+    z-index: 6;
+  }
+
+  .site-nav__dropdown:not([open]) .site-nav__submenu {
+    display: none;
+  }
+
+  .site-nav__submenu a {
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 900px) {
+    .site-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   .site-footer {

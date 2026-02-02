@@ -8,27 +8,6 @@ import Base from '../layouts/Base.astro';
   alternateUrl="/en/"
 >
   <main class="hero">
-    <header class="hero__header">
-      <div class="hero__mark">LearningML</div>
-      <nav class="hero__nav">
-        <a href="/que-es-ml/">Qué es</a>
-        <a href="/por-que-aprender-ml/">Por qué</a>
-        <a href="/blog/">Blog</a>
-        <a href="/trabajos-sobre-learningml/">Estudios</a>
-        <a href="https://learningml.org/manual/">Manual</a>
-        <details class="hero__dropdown">
-          <summary>
-            Acerca de
-            <span class="hero__caret" aria-hidden="true">▾</span>
-          </summary>
-          <div class="hero__submenu">
-            <a href="/acerca-de-learningml-y-su-autor/">Acerca de</a>
-            <a href="/agradecimientos/">Agradecimientos</a>
-          </div>
-        </details>
-      </nav>
-    </header>
-
     <section class="hero__content">
       <p class="hero__eyebrow">Inteligencia Artificial creativa</p>
       <div class="hero__headline">
@@ -76,72 +55,6 @@ import Base from '../layouts/Base.astro';
       gap: 3rem;
     }
 
-    .hero__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .hero__mark {
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    .hero__nav {
-      display: flex;
-      gap: 1.5rem;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      align-items: center;
-    }
-    .hero__dropdown {
-      position: relative;
-    }
-    .hero__dropdown summary {
-      list-style: none;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-    .hero__dropdown summary::-webkit-details-marker {
-      display: none;
-    }
-    .hero__caret {
-      font-size: 0.85rem;
-      opacity: 0.7;
-      transition: transform 0.2s ease;
-    }
-    .hero__dropdown[open] .hero__caret {
-      transform: rotate(180deg);
-    }
-    .hero__submenu {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      margin-top: 0.5rem;
-      background: #fff;
-      border-radius: 0.75rem;
-      padding: 0.5rem 0.75rem;
-      display: grid;
-      gap: 0.4rem;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-      min-width: 180px;
-      z-index: 5;
-    }
-    .hero__dropdown:not([open]) .hero__submenu {
-      display: none;
-    }
-    .hero__submenu a {
-      text-transform: none;
-      letter-spacing: 0.02em;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
 
     .hero__content h1 {
       font-size: clamp(2.4rem, 4vw, 4.2rem);
