@@ -5,21 +5,40 @@ import { normalizePostSlug } from '../../utils/postSlug';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
+  const pages = await getCollection('pages');
   const englishPosts = posts.filter(post => post.slug.startsWith('en/'));
-  return englishPosts.map(post => ({
-    params: { slug: normalizePostSlug(post.slug) },
-    props: { post }
+  const englishPages = pages.filter(page => page.slug.startsWith('en/'));
+
+  const bySlug = new Map();
+
+  englishPosts.forEach((post) => {
+    const slug = normalizePostSlug(post.slug);
+    bySlug.set(slug, { type: 'post', entry: post });
+  });
+
+  englishPages.forEach((page) => {
+    const slug = normalizePostSlug(page.slug);
+    if (!bySlug.has(slug)) {
+      bySlug.set(slug, { type: 'page', entry: page });
+    }
+  });
+
+  return Array.from(bySlug.entries()).map(([slug, data]) => ({
+    params: { slug },
+    props: data
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await post.render();
-const slug = normalizePostSlug(post.slug);
-const alternateSlug = post.data.translation;
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const slug = normalizePostSlug(entry.slug);
+const alternateSlug = entry.data.translation;
+const pageTitle = entry.data.title ?? 'LearningML';
+const pageDate = entry.data.date;
 ---
 <Post
-  title={post.data.title}
-  date={post.data.date}
+  title={pageTitle}
+  date={pageDate}
   lang="en"
   alternateUrl={alternateSlug ? `/${alternateSlug}/` : undefined}
 >

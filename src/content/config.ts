@@ -10,4 +10,13 @@ const posts = defineCollection({
   })
 });
 
-export const collections = { posts };
+const pages = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string().optional(),
+    date: z.coerce.date().optional(),
+    translation: z.string().optional()
+  })
+});
+
+export const collections = { posts, pages };
