@@ -91,6 +91,13 @@ const footerLinks = lang === 'en'
             <a href={link.href}>{link.label}</a>
           ))}
         </div>
+        <div class="site-footer__legal">
+          <p>LearningML Copyright © 2026 Juan David Rodríguez García</p>
+          <p>
+            LearningML web page by Juan David Rodríguez García is licensed under
+            Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+          </p>
+        </div>
       </div>
     </footer>
   </body>
@@ -190,6 +197,20 @@ const footerLinks = lang === 'en'
 
   .site-footer__links a {
     font-weight: 600;
+  }
+
+  .site-footer__legal {
+    font-size: 0.8rem;
+    color: rgba(30, 27, 22, 0.6);
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .site-footer__legal p {
+    margin: 0;
   }
 
   @media (max-width: 720px) {
