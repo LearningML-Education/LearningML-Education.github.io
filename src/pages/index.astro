@@ -49,6 +49,14 @@ const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/learningml-deskto
         <p>Exporta tu modelo de Machine Learning a Scratch y programa una aplicación con capacidad para clasificar datos sobre el tema que hayas elegido. ¡Enhorabuena! ¡has incorporado Inteligencia Artificial a tu programa Scratch!</p>
       </article>
     </section>
+
+    <section class="hero__video">
+      <h2>Mini tutorial: cómo usar LearningML</h2>
+      <video controls autoplay muted loop preload="metadata" playsinline>
+        <source src="https://web.learningml.org/wp-content/uploads/2020/05/mini-tutorial-intro-imagenes.mp4" type="video/mp4" />
+        Tu navegador no soporta la reproducción de vídeo.
+      </video>
+    </section>
   </main>
 
   <style>
@@ -166,6 +174,28 @@ const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/learningml-deskto
       background: rgba(255, 255, 255, 0.92);
       color: var(--ink);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero__video {
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--ink);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      margin-top: 0.5rem;
+    }
+
+    .hero__video h2 {
+      margin: 0 0 0.85rem;
+      font-size: clamp(1.15rem, 2vw, 1.6rem);
+    }
+
+    .hero__video video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 0.85rem;
+      background: #000;
     }
 
     @media (max-width: 768px) {
