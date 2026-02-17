@@ -40,8 +40,6 @@ Therefore, if you like LearningML, you are finding it useful, you use it in your
 
 **ALL donations are valuable!** But the way to guarantee its maintenance and obtain funds to develop new features is through periodic contributions.
 
-  ![](images/pixel.gif)
-
 Finally, if you have a company, association or foundation interested in LearningML continuing to serve and develop, **you can become a premium sponsor** and we will place your logo with a link to your website in the footer of the LearningML editor.
 
 [Premium sponsorship](https://web.learningml.org/en/premium-sponsorship/)

@@ -41,5 +41,3 @@ Te ofrecemos colocar en el editor de LearningML un enlace a tu web con tu logo a
 Finalmente, si quieres hacer una aportación periódica menor o mayor, puedes usar este formulario.
 
 Si te gustaría que añadiésemos a LearningML alguna funcionalidad especial. O si se te ocurre alguna otra forma de contribuir al proyecto escríbenos a través de nuestro [formulario de contacto](https://web.learningml.org/contacto/).
-
-  ![](images/pixel.gif)

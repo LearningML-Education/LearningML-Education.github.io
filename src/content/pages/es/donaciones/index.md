@@ -40,8 +40,6 @@ Por eso, si te gusta LearningML, te está resultando útil, la usas en tus curso
 
 **TODAS las donaciones son valiosas**! Pero la manera de garantizar su mantenimiento y conseguir fondos para desarrollar nuevas funcionalidades es mediante aportaciones periódicas.
 
-  ![](images/pixel.gif)
-
 Por último, si tienes una empresa, asociación o fundación interesada en que LearningML siga dando servicio y desarrollándose, **puedes convertirte en patrocinador** _**premium**_ y colocaremos tu logo con un enlace a tu página web en el pie de página del editor de LearningML.
 
 [Patrocinio premium](https://web.learningml.org/patrocinio-premium/)
