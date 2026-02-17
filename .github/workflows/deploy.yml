@@ -29,11 +29,21 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
+      - name: Check public URL envs
+        env:
+          PUBLIC_LML_OPEN_EDITOR_URL: ${{ vars.PUBLIC_LML_OPEN_EDITOR_URL || secrets.PUBLIC_LML_OPEN_EDITOR_URL }}
+          PUBLIC_LML_OPEN_SCRATCH_URL: ${{ vars.PUBLIC_LML_OPEN_SCRATCH_URL || secrets.PUBLIC_LML_OPEN_SCRATCH_URL }}
+          PUBLIC_LML_DESKTOP_URL: ${{ vars.PUBLIC_LML_DESKTOP_URL || secrets.PUBLIC_LML_DESKTOP_URL }}
+        run: |
+          test -n "$PUBLIC_LML_OPEN_EDITOR_URL" && echo "OPEN_EDITOR_URL: set" || echo "OPEN_EDITOR_URL: empty"
+          test -n "$PUBLIC_LML_OPEN_SCRATCH_URL" && echo "OPEN_SCRATCH_URL: set" || echo "OPEN_SCRATCH_URL: empty"
+          test -n "$PUBLIC_LML_DESKTOP_URL" && echo "DESKTOP_URL: set" || echo "DESKTOP_URL: empty"
+
       - name: Build
         env:
-          PUBLIC_LML_OPEN_EDITOR_URL: ${{ vars.PUBLIC_LML_OPEN_EDITOR_URL }}
-          PUBLIC_LML_OPEN_SCRATCH_URL: ${{ vars.PUBLIC_LML_OPEN_SCRATCH_URL }}
-          PUBLIC_LML_DESKTOP_URL: ${{ vars.PUBLIC_LML_DESKTOP_URL }}
+          PUBLIC_LML_OPEN_EDITOR_URL: ${{ vars.PUBLIC_LML_OPEN_EDITOR_URL || secrets.PUBLIC_LML_OPEN_EDITOR_URL }}
+          PUBLIC_LML_OPEN_SCRATCH_URL: ${{ vars.PUBLIC_LML_OPEN_SCRATCH_URL || secrets.PUBLIC_LML_OPEN_SCRATCH_URL }}
+          PUBLIC_LML_DESKTOP_URL: ${{ vars.PUBLIC_LML_DESKTOP_URL || secrets.PUBLIC_LML_DESKTOP_URL }}
         run: bun run build
 
       - name: Configure Pages

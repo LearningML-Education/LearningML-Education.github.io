@@ -30,11 +30,16 @@ En local puedes definirlas en un fichero `.env`.
 
 ### Variables en GitHub Actions (deploy)
 
-El workflow `.github/workflows/deploy.yml` inyecta estas variables en el paso de `build` usando `vars.*`.
+El workflow `.github/workflows/deploy.yml` inyecta estas variables en el paso de `build` usando:
+
+- `vars.*` (Actions Variables), o
+- `secrets.*` (Actions Secrets), como fallback.
 
 Debes definirlas en:
 
-`Settings > Secrets and variables > Actions > Variables`
+`Settings > Secrets and variables > Actions > Variables`  
+o en  
+`Settings > Secrets and variables > Actions > Secrets`
 
 Nombres:
 
