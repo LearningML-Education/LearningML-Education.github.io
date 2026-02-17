@@ -53,9 +53,14 @@ const aboutLinks = lang === 'en'
     <style>
       :root {
         color-scheme: light;
-        --bg: #f3efe7;
-        --ink: #1e1b16;
-        --accent: #e85d3f;
+        --bg: #E6F0EE;
+        --surface: #F2F7F6;
+        --surface-soft: #FBFCFC;
+        --surface-strong: #ffffff;
+        --ink: #192c27;
+        --muted: #365951;
+        --accent: #007f5f;
+        --accent-2: #55a630;
       }
 
       * {
@@ -65,7 +70,7 @@ const aboutLinks = lang === 'en'
       body {
         margin: 0;
         font-family: "Space Grotesk", "Futura", "Gill Sans", "Trebuchet MS", sans-serif;
-        background: radial-gradient(1200px 600px at 20% -10%, #fff5e8 0%, #f3efe7 60%, #efe6d8 100%);
+        background: radial-gradient(1200px 600px at 20% -10%, var(--surface-strong) 0%, var(--bg) 60%, var(--surface) 100%);
         color: var(--ink);
       }
 
@@ -83,7 +88,10 @@ const aboutLinks = lang === 'en'
       </nav>
     )}
     <header class="site-nav">
-      <a class="site-nav__brand" href={lang === 'en' ? '/en/' : '/'}>LearningML</a>
+      <a class="site-nav__brand" href={lang === 'en' ? '/en/' : '/'} aria-label="LearningML home">
+        <img src="/genio-cabeza-logo.png" alt="" width="48" height="48" />
+        <span>LearningML</span>
+      </a>
       <nav class="site-nav__links" aria-label="Main navigation">
         {navLinks.map((link) => (
           <a href={link.href}>{link.label}</a>
@@ -156,7 +164,7 @@ const aboutLinks = lang === 'en'
     align-items: center;
     padding: 0.35rem 0.6rem;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.88);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     font-size: 0.75rem;
     font-weight: 700;
@@ -184,10 +192,20 @@ const aboutLinks = lang === 'en'
   }
 
   .site-nav__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent);
+  }
+
+  .site-nav__brand img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    border-radius: 999px;
   }
 
   .site-nav__links {
@@ -231,7 +249,7 @@ const aboutLinks = lang === 'en'
     top: 100%;
     right: 0;
     margin-top: 0.5rem;
-    background: #fff;
+    background: var(--surface-strong);
     border-radius: 0.75rem;
     padding: 0.5rem 0.75rem;
     display: grid;
@@ -266,7 +284,7 @@ const aboutLinks = lang === 'en'
   .site-footer__inner {
     max-width: 1100px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.92);
     border-radius: 1.5rem;
     padding: 1.5rem 1.75rem;
     display: flex;
@@ -287,7 +305,7 @@ const aboutLinks = lang === 'en'
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: rgba(30, 27, 22, 0.7);
+    color: rgba(25, 44, 39, 0.7);
   }
 
   .site-footer__icons {
@@ -302,7 +320,7 @@ const aboutLinks = lang === 'en'
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(30, 27, 22, 0.08);
+    background: rgba(0, 127, 95, 0.12);
     transition: transform 0.2s ease, background 0.2s ease;
   }
 
@@ -314,7 +332,7 @@ const aboutLinks = lang === 'en'
 
   .site-footer__icon:hover {
     transform: translateY(-2px);
-    background: rgba(30, 27, 22, 0.14);
+    background: rgba(0, 127, 95, 0.2);
   }
 
   .site-footer__links {
@@ -330,7 +348,7 @@ const aboutLinks = lang === 'en'
 
   .site-footer__legal {
     font-size: 0.8rem;
-    color: rgba(30, 27, 22, 0.6);
+    color: rgba(25, 44, 39, 0.6);
     flex-basis: 100%;
     text-align: center;
     display: flex;
