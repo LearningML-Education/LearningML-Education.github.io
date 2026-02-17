@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 
 const openEditorUrl = import.meta.env.PUBLIC_LML_OPEN_EDITOR_URL ?? '/lml-editor/';
-const createModelUrl = import.meta.env.PUBLIC_LML_CREATE_MODEL_URL ?? '/scratch/';
+const openScratchUrl = import.meta.env.PUBLIC_LML_OPEN_SCRATCH_URL ?? '/scratch/';
 const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/en/learningml-desktop/';
 ---
 <Base
@@ -30,7 +30,7 @@ const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/en/learningml-des
       </p>
       <div class="hero__cta">
         <a class="button primary" href={openEditorUrl}>Open editor</a>
-        <a class="button ghost" href={createModelUrl}>Go to Scratch</a>
+        <a class="button ghost" href={openScratchUrl}>Go to Scratch</a>
         <a class="button ghost" href={desktopUrl}>LearningML Desktop</a>
       </div>
     </section>

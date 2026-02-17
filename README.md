@@ -22,7 +22,7 @@ Puedes configurar los enlaces principales de la home con variables públicas de 
 
 ```bash
 PUBLIC_LML_OPEN_EDITOR_URL=/lml-editor/
-PUBLIC_LML_CREATE_MODEL_URL=/scratch/
+PUBLIC_LML_OPEN_SCRATCH_URL=/scratch/
 PUBLIC_LML_DESKTOP_URL=/learningml-desktop/
 ```
 
@@ -39,7 +39,7 @@ Debes definirlas en:
 Nombres:
 
 - `PUBLIC_LML_OPEN_EDITOR_URL`
-- `PUBLIC_LML_CREATE_MODEL_URL`
+- `PUBLIC_LML_OPEN_SCRATCH_URL`
 - `PUBLIC_LML_DESKTOP_URL`
 
 ## Traducciones de posts (ES/EN)
