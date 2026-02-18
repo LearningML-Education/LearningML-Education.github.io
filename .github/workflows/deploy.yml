@@ -36,16 +36,25 @@ jobs:
           PUBLIC_LML_OPEN_EDITOR_URL: ${{ vars.PUBLIC_LML_OPEN_EDITOR_URL || secrets.PUBLIC_LML_OPEN_EDITOR_URL }}
           PUBLIC_LML_OPEN_SCRATCH_URL: ${{ vars.PUBLIC_LML_OPEN_SCRATCH_URL || secrets.PUBLIC_LML_OPEN_SCRATCH_URL }}
           PUBLIC_LML_DESKTOP_URL: ${{ vars.PUBLIC_LML_DESKTOP_URL || secrets.PUBLIC_LML_DESKTOP_URL }}
+          PUBLIC_LML_BUDGET_CURRENT: ${{ vars.PUBLIC_LML_BUDGET_CURRENT || secrets.PUBLIC_LML_BUDGET_CURRENT }}
+          PUBLIC_LML_MONTHLY_COST: ${{ vars.PUBLIC_LML_MONTHLY_COST || secrets.PUBLIC_LML_MONTHLY_COST }}
+          PUBLIC_LML_BUDGET_ORIGIN_DATE: ${{ vars.PUBLIC_LML_BUDGET_ORIGIN_DATE || secrets.PUBLIC_LML_BUDGET_ORIGIN_DATE }}
         run: |
           test -n "$PUBLIC_LML_OPEN_EDITOR_URL" && echo "OPEN_EDITOR_URL: set" || echo "OPEN_EDITOR_URL: empty"
           test -n "$PUBLIC_LML_OPEN_SCRATCH_URL" && echo "OPEN_SCRATCH_URL: set" || echo "OPEN_SCRATCH_URL: empty"
           test -n "$PUBLIC_LML_DESKTOP_URL" && echo "DESKTOP_URL: set" || echo "DESKTOP_URL: empty"
+          test -n "$PUBLIC_LML_BUDGET_CURRENT" && echo "BUDGET_CURRENT: set" || echo "BUDGET_CURRENT: empty"
+          test -n "$PUBLIC_LML_MONTHLY_COST" && echo "MONTHLY_COST: set" || echo "MONTHLY_COST: empty"
+          test -n "$PUBLIC_LML_BUDGET_ORIGIN_DATE" && echo "BUDGET_ORIGIN_DATE: set" || echo "BUDGET_ORIGIN_DATE: empty"
 
       - name: Build
         env:
           PUBLIC_LML_OPEN_EDITOR_URL: ${{ vars.PUBLIC_LML_OPEN_EDITOR_URL || secrets.PUBLIC_LML_OPEN_EDITOR_URL }}
           PUBLIC_LML_OPEN_SCRATCH_URL: ${{ vars.PUBLIC_LML_OPEN_SCRATCH_URL || secrets.PUBLIC_LML_OPEN_SCRATCH_URL }}
           PUBLIC_LML_DESKTOP_URL: ${{ vars.PUBLIC_LML_DESKTOP_URL || secrets.PUBLIC_LML_DESKTOP_URL }}
+          PUBLIC_LML_BUDGET_CURRENT: ${{ vars.PUBLIC_LML_BUDGET_CURRENT || secrets.PUBLIC_LML_BUDGET_CURRENT }}
+          PUBLIC_LML_MONTHLY_COST: ${{ vars.PUBLIC_LML_MONTHLY_COST || secrets.PUBLIC_LML_MONTHLY_COST }}
+          PUBLIC_LML_BUDGET_ORIGIN_DATE: ${{ vars.PUBLIC_LML_BUDGET_ORIGIN_DATE || secrets.PUBLIC_LML_BUDGET_ORIGIN_DATE }}
         run: bun run build
 
       - name: Configure Pages

@@ -24,6 +24,9 @@ Puedes configurar los enlaces principales de la home con variables públicas de 
 PUBLIC_LML_OPEN_EDITOR_URL=/lml-editor/
 PUBLIC_LML_OPEN_SCRATCH_URL=/scratch/
 PUBLIC_LML_DESKTOP_URL=/learningml-desktop/
+PUBLIC_LML_BUDGET_CURRENT=1200
+PUBLIC_LML_MONTHLY_COST=50
+PUBLIC_LML_BUDGET_ORIGIN_DATE=2025-03-01
 ```
 
 En local puedes definirlas en un fichero `.env`.
@@ -46,6 +49,9 @@ Nombres:
 - `PUBLIC_LML_OPEN_EDITOR_URL`
 - `PUBLIC_LML_OPEN_SCRATCH_URL`
 - `PUBLIC_LML_DESKTOP_URL`
+- `PUBLIC_LML_BUDGET_CURRENT`
+- `PUBLIC_LML_MONTHLY_COST`
+- `PUBLIC_LML_BUDGET_ORIGIN_DATE`
 
 ## Traducciones de posts (ES/EN)
 

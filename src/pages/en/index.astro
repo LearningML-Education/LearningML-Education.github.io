@@ -4,6 +4,32 @@ import Base from '../../layouts/Base.astro';
 const openEditorUrl = import.meta.env.PUBLIC_LML_OPEN_EDITOR_URL ?? '/lml-editor/';
 const openScratchUrl = import.meta.env.PUBLIC_LML_OPEN_SCRATCH_URL ?? '/scratch/';
 const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/en/learningml-desktop/';
+const budgetCurrent = Number.parseFloat(import.meta.env.PUBLIC_LML_BUDGET_CURRENT ?? '');
+const monthlyCost = Number.parseFloat(import.meta.env.PUBLIC_LML_MONTHLY_COST ?? '');
+const originDateRaw = import.meta.env.PUBLIC_LML_BUDGET_ORIGIN_DATE ?? '';
+const originDate = new Date(originDateRaw);
+const hasValidBudgetData =
+  Number.isFinite(budgetCurrent) &&
+  Number.isFinite(monthlyCost) &&
+  monthlyCost > 0 &&
+  !Number.isNaN(originDate.getTime());
+const estimatedDays = hasValidBudgetData ? Math.max(0, Math.round((budgetCurrent / monthlyCost) * 30.4375)) : 0;
+const estimatedCloseDate = hasValidBudgetData
+  ? new Date(originDate.getTime() + estimatedDays * 24 * 60 * 60 * 1000)
+  : null;
+const euroFormatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'EUR',
+  maximumFractionDigits: 2
+});
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+const formattedBudgetCurrent = Number.isFinite(budgetCurrent) ? euroFormatter.format(budgetCurrent) : 'Not configured';
+const formattedMonthlyCost = Number.isFinite(monthlyCost) ? euroFormatter.format(monthlyCost) : 'Not configured';
+const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCloseDate) : 'Not calculable';
 ---
 <Base
   title="LearningML - AI Made easy"
@@ -23,6 +49,12 @@ const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/en/learningml-des
           <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
           All Digital Awards 2024 Winner
         </a>
+      </div>
+      <div class="hero__status-card">
+        <p class="hero__status-label">Current budget</p>
+        <p class="hero__status-value">{formattedBudgetCurrent}</p>
+        <p class="hero__status-meta">Monthly cost: {formattedMonthlyCost}</p>
+        <p class="hero__status-meta">Estimated closure: {formattedCloseDate}</p>
       </div>
       <p class="hero__lead">
         LearningML combines a visual editor with Scratch so anyone can train models
@@ -112,6 +144,39 @@ const desktopUrl = import.meta.env.PUBLIC_LML_DESKTOP_URL ?? '/en/learningml-des
     }
     .hero__ribbon-icon {
       font-size: 1rem;
+    }
+
+    .hero__status-card {
+      width: min(360px, 100%);
+      background: rgba(22, 33, 41, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.5rem;
+      padding: 0.85rem 1rem;
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .hero__status-label {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.95rem;
+    }
+
+    .hero__status-value {
+      margin: 0;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+
+    .hero__status-meta {
+      margin: 0;
+      padding-top: 0.45rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+      font-weight: 600;
     }
 
     .hero__eyebrow {
