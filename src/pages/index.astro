@@ -42,19 +42,21 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
       <p class="hero__eyebrow">Inteligencia Artificial creativa</p>
       <div class="hero__headline">
         <h1>Aprende los fundamentos del Machine Learning</h1>
-        <a
-          class="hero__ribbon"
-          href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/"
-        >
-          <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
-          Ganador del premio All Digital 2024
-        </a>
-      </div>
-      <div class="hero__status-card">
-        <p class="hero__status-label">Presupuesto actual</p>
-        <p class="hero__status-value">{formattedBudgetCurrent}</p>
-        <p class="hero__status-meta">Coste mensual: {formattedMonthlyCost}</p>
-        <p class="hero__status-meta">Cierre estimado: {formattedCloseDate}</p>
+        <div class="hero__side">
+          <a
+            class="hero__ribbon"
+            href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/"
+          >
+            <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
+            Ganador del premio All Digital 2024
+          </a>
+          <div class="hero__status-card">
+            <p class="hero__status-label">Presupuesto actual</p>
+            <p class="hero__status-value">{formattedBudgetCurrent}</p>
+            <p class="hero__status-meta">Coste mensual: {formattedMonthlyCost}</p>
+            <p class="hero__status-meta">Cierre estimado: {formattedCloseDate}</p>
+          </div>
+        </div>
       </div>
       <p class="hero__lead">
         Aprende Machine Learning construyendo proyectos con tus datos. LearningML combina un editor visual con Scratch
@@ -124,8 +126,14 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
     .hero__headline {
       display: grid;
       gap: 1rem;
-      align-items: center;
-      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: start;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    }
+
+    .hero__side {
+      display: grid;
+      gap: 0.75rem;
+      justify-items: start;
     }
     .hero__ribbon {
       display: inline-flex;
@@ -147,7 +155,7 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
     }
 
     .hero__status-card {
-      width: min(360px, 100%);
+      width: 100%;
       background: rgba(22, 33, 41, 0.92);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 0.5rem;
@@ -195,6 +203,9 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
       .hero__headline {
         grid-template-columns: 1fr;
         justify-items: start;
+      }
+      .hero__side {
+        width: 100%;
       }
       .hero__ribbon {
         white-space: normal;
