@@ -55,6 +55,11 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
             <p class="hero__status-value">{formattedBudgetCurrent}</p>
             <p class="hero__status-meta">Monthly cost: {formattedMonthlyCost}</p>
             <p class="hero__status-meta">Estimated closure: {formattedCloseDate}</p>
+            <form class="hero__status-donate" action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="DRDC7RAA8X59U" />
+              <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Botón Donar con PayPal" />
+              <img alt="" border="0" src="https://www.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
+            </form>
           </div>
         </div>
       </div>
@@ -185,6 +190,10 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
       color: rgba(255, 255, 255, 0.9);
       font-size: 0.95rem;
       font-weight: 600;
+    }
+
+    .hero__status-donate {
+      margin-top: 0.5rem;
     }
 
     .hero__eyebrow {
