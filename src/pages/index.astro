@@ -43,13 +43,6 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
       <div class="hero__headline">
         <h1>Aprende los fundamentos del Machine Learning</h1>
         <div class="hero__side">
-          <a
-            class="hero__ribbon"
-            href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/"
-          >
-            <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
-            Ganador del premio All Digital 2024
-          </a>
           <div class="hero__status-card">
             <p class="hero__status-label">Presupuesto actual</p>
             <p class="hero__status-value">{formattedBudgetCurrent}</p>
@@ -61,6 +54,13 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
               <img alt="" border="0" src="https://www.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
             </form>
           </div>
+          <a
+            class="hero__ribbon"
+            href="https://all-digital.org/all-digital-awards-2024-best-digital-resource/"
+          >
+            <span class="hero__ribbon-icon" aria-hidden="true">🏆</span>
+            Ganador del premio All Digital 2024
+          </a>
         </div>
       </div>
       <p class="hero__lead">
@@ -140,6 +140,7 @@ const formattedCloseDate = estimatedCloseDate ? dateFormatter.format(estimatedCl
       gap: 0.75rem;
       justify-items: start;
     }
+
     .hero__ribbon {
       display: inline-flex;
       align-items: center;
