@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const baseUrl = 'https://github.com/LearningML-Education/learningml-desktop-releases/releases/download/1.4.3';
+const downloads = [
+  {
+    os: 'Windows 10/11',
+    file: 'LearningMLDesktop-1.4.3.msi'
+  },
+  {
+    os: 'macOS',
+    file: 'LearningMLDesktop-1.4.3.dmg'
+  },
+  {
+    os: 'Linux (Debian/Ubuntu)',
+    file: 'learningml-desktop_1.4.3_amd64.deb'
+  },
+  {
+    os: 'Linux (CentOS/Fedora/RHEL)',
+    file: 'learningml-desktop-1.4.3.x86_64.rpm'
+  }
+];
+---
+
+<Base
+  title="LearningML Desktop Downloads"
+  description="Download links for LearningML Desktop"
+  lang="en"
+  alternateUrl="/learningml-desktop-releases/"
+>
+  <main class="downloads">
+    <h1>LearningML Desktop Downloads</h1>
+    <p>Select the installer for your operating system.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Operating system</th>
+          <th>Installer</th>
+        </tr>
+      </thead>
+      <tbody>
+        {downloads.map((item) => (
+          <tr>
+            <td>{item.os}</td>
+            <td>
+              <a href={`${baseUrl}/${item.file}`} target="_blank" rel="noopener noreferrer">
+                {item.file}
+              </a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </main>
+
+  <style>
+    .downloads {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+    }
+
+    p {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface-strong);
+      border-radius: 0.8rem;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid rgba(25, 44, 39, 0.1);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      background: rgba(0, 127, 95, 0.12);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      word-break: break-all;
+    }
+  </style>
+</Base>
