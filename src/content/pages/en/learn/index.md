@@ -8,7 +8,7 @@ In this section you will find **resources to learn how to use LearningML and cre
 
 Also, **resources to learn Artificial Intelligence and Machine Learning.**
 
-- [The LearningML Manual (in spanish)](https://web.learningml.org/manual-de-learningml/)
+- [The LearningML Manual (in spanish)](https://learningml.org/lml-doc/)
 
 - [Video tutorials](https://web.learningml.org/videotutoriales/) to quickly see how it all works
 

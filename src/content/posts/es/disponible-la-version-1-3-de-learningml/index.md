@@ -47,7 +47,7 @@ Y, a nivel de **funcionalidades**
 - **Y, reconocimiento de conjuntos de datos numéricos**
     - Visualización de los límites de decisión del algoritmo (para modelos numéricos bidimensionales).
 
-Poco a poco, haré nuevas entradas y actividades prácticas para explicar con más detalle estas **nuevas funcionalidades.** Están pensadas para que **el funcionamiento de los algoritmos de Machine Learning sea más intuitivo.** Por lo pronto, **puedes ver en el [manual de LearningML](https://web.learningml.org/manual-de-learningml/)** como se usan, aunque no hay ninguna explicación pedagógica.
+Poco a poco, haré nuevas entradas y actividades prácticas para explicar con más detalle estas **nuevas funcionalidades.** Están pensadas para que **el funcionamiento de los algoritmos de Machine Learning sea más intuitivo.** Por lo pronto, **puedes ver en el [manual de LearningML](https://learningml.org/lml-doc/)** como se usan, aunque no hay ninguna explicación pedagógica.
 
 Es importante que tengas en cuenta que se trata de una versión _beta_, todavía puede presentar algún fallo que otro. **Si encuentras algún error, envíame un mensaje mediante el formulario de contacto de esta web**. Cuando esta versión esté suficientemente depurada, ¡pasará a ser la versión estable! y comenzaré a trabajar en la nueva _beta_.
 

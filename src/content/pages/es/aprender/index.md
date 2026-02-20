@@ -8,7 +8,7 @@ En esta sección encontrarás **recursos para aprender a utilizar LearningML y c
 
 También, **recursos para aprender Inteligencia Artificial y Machine Learning.**
 
-- [El manual de LearningML](https://web.learningml.org/manual-de-learningml/)
+- [El manual de LearningML](https://learningml.org/lml-doc/)
 
 - [Videotutoriales](https://web.learningml.org/videotutoriales/) para que veas rápidamente cómo funciona todo esto
 

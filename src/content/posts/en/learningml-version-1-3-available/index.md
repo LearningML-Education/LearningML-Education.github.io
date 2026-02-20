@@ -49,7 +49,7 @@ At the level of **functionalities**:
 - **And, recognition of numerical data sets.**
     - Visualization of algorithm decision limits for two-dimensional numerical models.
 
-Gradually, I will make new entries and practical activities to explain in more detail these **new features**. They are designed **to make the operation of Machine Learning algorithms more intuitive.** For now, **you can see in the [L](http://web.learningml.org/manual-de-learningml/)**[**earningML manual**](http://web.learningml.org/manual-de-learningml/) how they are used, although there is no pedagogical explanation.
+Gradually, I will make new entries and practical activities to explain in more detail these **new features**. They are designed **to make the operation of Machine Learning algorithms more intuitive.** For now, **you can see in the [L](https://learningml.org/lml-doc/)**[**earningML manual**](https://learningml.org/lml-doc/) how they are used, although there is no pedagogical explanation.
 
 It is important to keep in mind that this is a beta version, it may still have some bugs. **If you find any error, send me a message through the contact form of this website.** When this version is sufficiently debugged, it will become the stable version! and I will start working on the new beta.
 
