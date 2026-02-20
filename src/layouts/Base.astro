@@ -53,6 +53,13 @@ const aboutLinks = lang === 'en'
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXGZS2VVP4"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RXGZS2VVP4');
+    </script>
     <style>
       :root {
         color-scheme: light;
