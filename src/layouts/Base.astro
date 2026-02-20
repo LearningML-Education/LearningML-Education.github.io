@@ -7,6 +7,7 @@ const {
 } = Astro.props;
 const currentLangLabel = lang === 'en' ? 'EN' : 'ES';
 const alternateLangLabel = lang === 'en' ? 'ES' : 'EN';
+const contactFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScxfjvWbEmRRYu4pT2F1Q8zEY7lE42TI2hZWWL9pyf7CaHNYg/viewform?usp=publish-editor';
 const footerLinks = lang === 'en'
   ? [
       { label: 'About LearningML', href: '/en/about-learningml/' },
@@ -159,6 +160,9 @@ const aboutLinks = lang === 'en'
               </svg>
             </a>
           </div>
+          <a class="site-footer__contact-link" href={contactFormUrl} target="_blank" rel="noopener noreferrer">
+            {lang === 'en' ? 'Contact form' : 'Formulario de contacto'}
+          </a>
         </div>
         <div class="site-footer__links">
           {footerLinks.map((link) => (
@@ -373,6 +377,20 @@ const aboutLinks = lang === 'en'
     flex-wrap: wrap;
     gap: 1.25rem;
     font-size: 0.95rem;
+  }
+
+  .site-footer__contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: rgba(0, 127, 95, 0.12);
+    color: var(--ink);
   }
 
   .site-footer__links a {
