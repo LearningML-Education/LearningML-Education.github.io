@@ -6,6 +6,7 @@ categories:
   - "blog-en"
   - "education"
   - "information"
+translation: twenty-things-to-do-with-a-computer-seymour-papert-and-cynthia-solomon-1971
 ---
 
 #### The quote

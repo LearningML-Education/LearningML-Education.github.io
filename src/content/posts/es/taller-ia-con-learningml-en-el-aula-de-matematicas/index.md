@@ -3,6 +3,7 @@ title: "Taller: IA con LearningML en el Aula de Matemáticas"
 date: 2025-05-28
 categories: 
   - "blog"
+translation: ai-workshop-with-learningml-in-the-mathematics-classroom
 ---
 
 [https://1drv.ms/p/c/e489072cc5443527/EQmnjGxeKpVBrOuRiQkq5P4BemHwrinm25arDpKPHOHD-w?e=H0fNDb](https://1drv.ms/p/c/e489072cc5443527/EQmnjGxeKpVBrOuRiQkq5P4BemHwrinm25arDpKPHOHD-w?e=H0fNDb)

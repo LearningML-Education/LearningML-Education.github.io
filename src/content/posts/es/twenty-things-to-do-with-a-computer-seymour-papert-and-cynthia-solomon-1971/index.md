@@ -6,6 +6,7 @@ categories:
   - "educacion"
   - "informacion-es"
   - "inteligencia-artificial"
+translation: twenty-things-to-do-with-a-computer-seymour-papert-and-cynthia-solomon-1971-2
 ---
 
 #### La cita

@@ -3,6 +3,7 @@ title: "Taller: IA con LearningML para FECYT"
 date: 2025-10-06
 categories: 
   - "blog"
+translation: ai-workshop-with-learningml-for-fecyt
 ---
 
 ### Presentación
