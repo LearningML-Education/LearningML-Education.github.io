@@ -120,19 +120,6 @@ const aboutLinks = lang === 'en'
             ))}
           </div>
         </details>
-        <form class="site-nav__donate-form" action="https://www.paypal.com/donate" method="post" target="_top">
-          <input type="hidden" name="hosted_button_id" value="DRDC7RAA8X59U" />
-          <input
-            class="site-nav__donate-button"
-            type="image"
-            src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_SM.gif"
-            border="0"
-            name="submit"
-            title="PayPal - The safer, easier way to pay online!"
-            alt={lang === 'en' ? 'Donate with PayPal button' : 'Botón Donar con PayPal'}
-          />
-          <img alt="" border="0" src="https://www.paypal.com/es_ES/i/scr/pixel.gif" width="1" height="1" />
-        </form>
       </nav>
     </header>
     <slot />
@@ -248,16 +235,7 @@ const aboutLinks = lang === 'en'
     align-items: center;
   }
 
-  .site-nav__donate-form {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  .site-nav__donate-button {
-    vertical-align: middle;
-  }
-
-  .site-nav__dropdown {
+.site-nav__dropdown {
     position: relative;
   }
 
