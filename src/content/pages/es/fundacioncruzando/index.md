@@ -1,10 +1,11 @@
 ---
 title: "Fundación Cruzando"
 date: 2021-05-25
+translation: fundacioncruzando
 ---
 
 <div class="post__split" style="margin-bottom: 2rem">
-  <div class="post__split-media">
+  <div class="post__split-media" style="background: var(--ink); border-radius: 1rem; padding: 1.5rem;">
     <a href="https://fundacioncruzando.org" target="_blank" rel="noopener noreferrer">
       <img src="/fundacioncruzando/logo-fundacion-cruzando.png" alt="Fundación Cruzando" />
     </a>
