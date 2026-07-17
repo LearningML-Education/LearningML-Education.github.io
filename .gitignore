@@ -9,6 +9,8 @@ bun.lockb
 # Node
 node_modules/
 .env
+.env.linkedin
+.linkedin/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

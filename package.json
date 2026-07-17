@@ -9,7 +9,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "check:translations": "bun scripts/validate-post-translations.mjs",
-    "apply:translations": "bun scripts/apply-post-translations.mjs"
+    "apply:translations": "bun scripts/apply-post-translations.mjs",
+    "linkedin:login": "bun scripts/linkedin.mjs login",
+    "linkedin:whoami": "bun scripts/linkedin.mjs whoami",
+    "linkedin:preview": "bun scripts/linkedin.mjs preview",
+    "linkedin:publish": "bun scripts/linkedin.mjs publish"
   },
   "dependencies": {
     "astro": "^4.16.0",

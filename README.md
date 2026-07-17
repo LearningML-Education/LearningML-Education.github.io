@@ -77,3 +77,31 @@ Validación:
 ```bash
 bun run check:translations
 ```
+
+## Publicar en LinkedIn desde la terminal
+
+La CLI publica desde el perfil personal autorizado o desde la página de LearningML, sin añadir ningún componente dinámico a la web. Requiere Bun y una aplicación de LinkedIn.
+
+1. Crea una app en [LinkedIn Developers](https://www.linkedin.com/developers/apps), activa **Sign In with LinkedIn using OpenID Connect** y **Share on LinkedIn**, y configura como URL de retorno `http://127.0.0.1:8787/linkedin/callback`. El primer producto permite a la CLI identificar el perfil autorizado y el segundo concede `w_member_social` para publicar.
+2. Copia el ejemplo de configuración y completa el identificador y secreto de cliente. Si LinkedIn deja de admitir la versión de API indicada, actualiza `LINKEDIN_API_VERSION` según su documentación.
+
+   ```bash
+   cp .env.linkedin.example .env.linkedin
+   ```
+
+3. Autoriza la cuenta que publica (debe tener permisos de administración de la página para el destino `learningml`):
+
+   ```bash
+   bun run linkedin:login
+   ```
+
+4. Previsualiza y publica un borrador de texto. La publicación solo se realiza tras escribir exactamente `PUBLICAR`.
+
+   ```bash
+   bun run linkedin:preview -- --as personal --file borrador-linkedin.txt
+   bun run linkedin:publish -- --as learningml --file borrador-linkedin.txt
+   ```
+
+`.env.linkedin` y `.linkedin/session.json` contienen secretos locales y están excluidos de Git.
+
+Para publicar desde una página, LinkedIn exige una aplicación independiente aprobada para **Community Management API**. No se puede añadir ese producto a la aplicación de perfil personal; consulta la documentación de LinkedIn antes de configurar el destino `learningml`.
