@@ -101,6 +101,14 @@ Notas:
 - Usa `public/` para recursos compartidos o cuando la URL pública estable importe.
 - Respeta el tono educativo, práctico y claro de LearningML.
 
+## Recursos descargables de actividades
+
+- Los ficheros descargables de cada actividad (sprites de Scratch, datasets, etc.) viven en `public/recursos/actividades/<slug-de-la-actividad>/`, con URL estable `/recursos/actividades/<slug>/<fichero>`.
+- Nombres en minúsculas con guiones y prefijo de tipo: `sprites-*.zip`, `dataset-*.zip`.
+- Si actualizas un zip, conserva el nombre para no romper enlaces ya compartidos.
+- Desde la página de la actividad enlaza con ruta absoluta, p. ej. `[Descargar sprites](/recursos/actividades/asistente-virtual/sprites-asistente-virtual.zip)`.
+- Recursos actuales: `asistente-virtual`, `flipalo-en-colores-con-el-camaleon`, `reconoce-los-estilos-pictoricos`.
+
 ## Convenciones de UI
 
 - Mantén la estética ya establecida: verdes, fondos claros, `Nunito`/`Nunito Sans`, layouts limpios y accesibles.
