@@ -95,18 +95,26 @@ const aboutLinks = lang === 'en'
     </style>
   </head>
   <body>
-    {alternateUrl && (
-      <nav class="lang-switcher" aria-label="Language selector">
-        <span class="lang-switcher__current" aria-current="true">{currentLangLabel}</span>
-        <a class="lang-switcher__link" href={alternateUrl}>{alternateLangLabel}</a>
-      </nav>
-    )}
     <header class="site-nav">
       <a class="site-nav__brand" href={lang === 'en' ? '/en/' : '/'} aria-label="LearningML home">
         <img src="/genio-cabeza-logo.png" alt="" width="48" height="48" />
-        <span>LearningML - AI Made easy</span>
+        <span class="site-nav__brand-text">
+          <span class="site-nav__brand-name">LearningML</span>
+          <span class="site-nav__brand-tagline">AI made easy</span>
+        </span>
       </a>
-      <nav class="site-nav__links" aria-label="Main navigation">
+      <div class="site-nav__actions">
+        {alternateUrl && (
+          <nav class="lang-switcher" aria-label="Language selector">
+            <span class="lang-switcher__current" aria-current="true">{currentLangLabel}</span>
+            <a class="lang-switcher__link" href={alternateUrl}>{alternateLangLabel}</a>
+          </nav>
+        )}
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label={lang === 'en' ? 'Open menu' : 'Abrir menú'}>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav class="site-nav__links" id="site-nav-links" aria-label="Main navigation">
         {navLinks.map((link) => (
           <a href={link.href}>{link.label}</a>
         ))}
@@ -123,6 +131,17 @@ const aboutLinks = lang === 'en'
         </details>
       </nav>
     </header>
+    <script is:inline>
+      (() => {
+        const toggle = document.querySelector('.site-nav__toggle');
+        const nav = document.querySelector('.site-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', () => {
+          const open = nav.classList.toggle('site-nav--open');
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+      })();
+    </script>
     <slot />
     <footer class="site-footer">
       <div class="site-footer__inner">
@@ -172,22 +191,98 @@ const aboutLinks = lang === 'en'
 </html>
 
 <style>
+  .site-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.5rem;
+  }
+
+  .site-nav__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+
+  .site-nav__brand img {
+    width: 2.75rem;
+    height: 2.75rem;
+    object-fit: contain;
+    border-radius: 999px;
+  }
+
+  .site-nav__brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  .site-nav__brand-name {
+    font-family: "Nunito", "Trebuchet MS", "Gill Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .site-nav__brand-tagline {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .site-nav__links {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.15rem;
+    font-family: "Nunito", "Trebuchet MS", "Gill Sans", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .site-nav__links > a,
+  .site-nav__dropdown summary {
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .site-nav__links > a:hover,
+  .site-nav__dropdown summary:hover,
+  .site-nav__dropdown[open] summary {
+    background: rgba(0, 127, 95, 0.1);
+    color: var(--accent);
+  }
+
+  .site-nav__actions {
+    order: 3;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   .lang-switcher {
-    position: fixed;
-    top: 1.5rem;
-    right: 1.5rem;
     display: inline-flex;
     gap: 0.35rem;
     align-items: center;
-    padding: 0.35rem 0.6rem;
+    padding: 0.4rem 0.7rem;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.88);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    z-index: 10;
   }
 
   .lang-switcher__current {
@@ -198,45 +293,64 @@ const aboutLinks = lang === 'en'
     color: var(--accent);
   }
 
-  .site-nav {
-    max-width: 1100px;
-    margin: 2rem auto 0;
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-
-  .site-nav__brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-
-  .site-nav__brand img {
-    width: 3rem;
-    height: 3rem;
-    object-fit: contain;
+  .site-nav__toggle {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
     border-radius: 999px;
+    background: rgba(0, 127, 95, 0.1);
+    color: var(--accent);
+    cursor: pointer;
+    position: relative;
   }
 
-  .site-nav__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-    font-family: "Nunito", "Trebuchet MS", "Gill Sans", sans-serif;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    align-items: center;
+  .site-nav__toggle span,
+  .site-nav__toggle span::before,
+  .site-nav__toggle span::after {
+    position: absolute;
+    left: 50%;
+    width: 1.1rem;
+    height: 2px;
+    margin-left: -0.55rem;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
   }
 
-.site-nav__dropdown {
+  .site-nav__toggle span {
+    top: 50%;
+    margin-top: -1px;
+  }
+
+  .site-nav__toggle span::before,
+  .site-nav__toggle span::after {
+    content: "";
+    left: 0;
+    margin-left: 0;
+  }
+
+  .site-nav__toggle span::before {
+    top: -6px;
+  }
+
+  .site-nav__toggle span::after {
+    top: 6px;
+  }
+
+  .site-nav--open .site-nav__toggle span {
+    background: transparent;
+  }
+
+  .site-nav--open .site-nav__toggle span::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .site-nav--open .site-nav__toggle span::after {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .site-nav__dropdown {
     position: relative;
   }
 
@@ -253,7 +367,7 @@ const aboutLinks = lang === 'en'
   }
 
   .site-nav__caret {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     opacity: 0.7;
     transition: transform 0.2s ease;
   }
@@ -269,11 +383,11 @@ const aboutLinks = lang === 'en'
     margin-top: 0.5rem;
     background: var(--surface-strong);
     border-radius: 0.75rem;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem;
     display: grid;
-    gap: 0.4rem;
+    gap: 0.15rem;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-    min-width: 180px;
+    min-width: 190px;
     z-index: 6;
   }
 
@@ -282,16 +396,54 @@ const aboutLinks = lang === 'en'
   }
 
   .site-nav__submenu a {
-    text-transform: none;
-    letter-spacing: 0.02em;
-    font-size: 0.9rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.5rem;
+    font-size: 0.92rem;
     font-weight: 600;
   }
 
-  @media (max-width: 900px) {
-    .site-nav {
+  .site-nav__submenu a:hover {
+    background: rgba(0, 127, 95, 0.1);
+    color: var(--accent);
+  }
+
+  @media (max-width: 1000px) {
+    .site-nav__actions {
+      margin-left: auto;
+    }
+
+    .site-nav__toggle {
+      display: inline-block;
+    }
+
+    .site-nav__links {
+      order: 4;
+      flex-basis: 100%;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: stretch;
+      gap: 0.15rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      background: var(--surface-strong);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .site-nav:not(.site-nav--open) .site-nav__links {
+      display: none;
+    }
+
+    .site-nav__links > a,
+    .site-nav__dropdown summary {
+      display: flex;
+      border-radius: 0.6rem;
+    }
+
+    .site-nav__submenu {
+      position: static;
+      margin: 0.15rem 0 0 0.75rem;
+      padding: 0;
+      box-shadow: none;
+      min-width: 0;
     }
   }
 
